@@ -10,10 +10,12 @@
   </head>
   <body>
 
-	<div class="bossHeader">
-	  <div class="bossHeaderMenu">
-	    <div class="large-2 columns">BOSS</div>
-	    <div class="large-2 columns end"><input type="text"></div>
+	<div class="bossHeaderContainer">
+	  <div class="bossHeader">
+		<div class="large-1 columns">
+	    	<div class="bossLogo"></div>
+	    </div>
+
 	  </div>
 	</div>
 
@@ -29,7 +31,11 @@
 	  <section class="top-bar-section">
 	    <!-- Right Nav Section -->
 	    <ul class="right">
-	      <li><a href="#" class="bossTrigger">BOSS</a></li>
+	      <li>
+	      		<a href="#" class="boss">
+	      			<div class="bossIcon"></div>
+	      		</a>
+	      	</li>
 	    </ul>
 
 	    <!-- Left Nav Section -->
@@ -199,9 +205,9 @@
 
 <script>
 
-$('.bossTrigger').click(function(event){
+$('.boss').click(function(event){
   event.preventDefault();
-  $('.bossHeader').toggleClass('pushed');
+  $('.bossHeaderContainer').toggleClass('pushed');
 });
 
 </script>

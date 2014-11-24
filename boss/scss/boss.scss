@@ -3,19 +3,39 @@ $lightblue: lighten( $blue, 20%);
 $softblue: darken( $blue, 10%);
 $darkblue: darken( $blue, 18%);
 
-.bossHeader{
+.boss {
+  background-color: $softblue !important;
+  padding-top: 8px !important;
+  width: 60px !important;
+  height: 45px;
+}
+.bossHeaderContainer{
   position: relative;
   transition: margin 1s ease;
 }
-.bossHeaderMenu{
+.bossHeader{
   background-color: $softblue;
-  height: 60px;
+  height: 45px;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
   transform: translateY(-100%);
+
+  .bossLogo {
+    background-image: url(../img/boss.svg);
+    background-repeat: no-repeat;
+    padding: .5rem;
+    margin-top: 15px;
+  }
 }
-.bossHeader.pushed{
-   margin-top: 60px; 
+.bossHeaderContainer.pushed{
+   margin-top: 45px; 
+}
+
+.bossIcon {
+  height: 28px;
+  width: 28px;
+  background-image: url(../img/globe.svg) !important;
+  background-repeat: no-repeat !important;
 }
