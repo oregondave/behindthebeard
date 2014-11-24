@@ -1,0 +1,193 @@
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <h4>Title Details</h4>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <div class="right">
+      <button class="button tiny">SAVE CHANGES</button>
+      <a href="#/renewalsManager" class="button secondary tiny">CANCEL</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-9 medium-9 columns">
+    <label>Title Name</label>
+    <input disabled type="text" placeholder="Title" value="AAMC Directory of American Medical Education" />
+  </div>
+  <div class="large-3 medium-3 columns">
+    <label>Renew</label>
+    <select>
+      <option value="" selected="yes">Yes</option>
+      <option value="" >No</option>
+      <option value="">Hold</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-3 medium-3 columns">
+    <label>Title Number</label>
+    <input disabled type="text" placeholder="Title Number" value="000-476-002" />
+  </div>
+  <div class="large-3 medium-3 columns">
+    <label>Print ISSN</label>
+    <input disabled type="text" placeholder="Print ISSN" value="0360-7437" />
+  </div>
+  <div class="large-3 medium-3 columns">
+    <label>Online ISSN</label>
+    <input disabled type="text" placeholder="Online ISSN" />
+  </div>
+  <div class="large-3 medium-3 columns">
+    <label>Alternate Format</label>
+    <select>
+      <option ng-repeat="format in renewals.format"value="" >{{format.type}}</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Publisher</label>
+    <select disabled>
+      <option selected="yes">AAMC</option>
+    </select>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Publisher ID</label>
+    <select disabled>
+      <option selected="yes">AAMC</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Cancellable</label>
+    <select disabled>
+      <option selected="yes">Yes</option>
+      <option selected="no">No</option>
+    </select>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Account Number</label>
+    <input disabled type="text" placeholder="Account Number" value="BR04900-13" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Subscriber Code</label>
+    <select>
+      <option>01</option>
+      <option>AA</option>
+    </select>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Subscriber Name</label>
+    <input disabled type="text" placeholder="Subscriber Name" value="DEPARTMENT 01" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Package Name</label>
+    <input disabled type="text" placeholder="Package Name" value="" />
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Renewal Total</label>
+    <input disabled type="number" step="0.01" placeholder="Renewal Total" value="105.00" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Currency</label>
+    <input disabled type="text" placeholder="Currency" value="USD" />
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Order Number</label>
+    <input disabled type="text" placeholder="Order Number" value="D8966686" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Changes to Renewal?</label>
+    <select disabled>
+      <option selected="yes">Yes</option>
+      <option selected="no">No</option>
+    </select>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Format</label>
+    <select disabled>
+      <option ng-repeat="format in renewals.format" value="Online" >{{format.type}}</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Start Date</label>
+    <input type="text" class="date" value="12-01-2013" id="" />
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Term</label>
+    <input type="number" step="1" placeholder="Term" value="1 Year(s)" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Quantity</label>
+    <input type="number" step="1" placeholder="Quantity" value="1" />
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>ILS Number</label>
+    <input type="text" placeholder="ILS Number" value="" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Fund Code</label>
+    <input type="text" placeholder="Fund Code" value="" />
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Registration ID</label>
+    <input type="number" placeholder="Registration ID"/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Publisher Reference ID</label>
+    <input type="number" step="1" placeholder="AC" value="0" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Title Notes</label>
+    <textarea></textarea>
+  </div>
+
+  <div class="large-6 medium-6 columns">
+    <label>Renewal Notes</label>
+    <textarea></textarea>
+  </div>
+</div>
+
+
+
+
+
+<script>
+
+  initiateZURB();
+  $('.date').fdatepicker({
+    format: 'mm-dd-yyyy'
+  });
+
+</script>

@@ -1,0 +1,123 @@
+<div ng-controller="eventTrackerController">
+
+  <div class="row" ng-repeat="comm in comms.communications" ng-show="comm.commID=='EF-935532'">
+    
+    <div class="commLineItem parent">
+      <div class="row">
+        <div class="large-12 columns">
+          <h6>{{comm.commID}}</h6>
+        </div>
+      </div>
+      <div class="row">
+          
+        <div class="large-12 columns">
+          <div data-reveal-id="addNote"  class="addNoteButton right"></div>
+          <div class="title horizontalForm clear left">
+            <label>Subject:</label> 
+            <value>{{comm.commSummary}}</value>
+          </div>
+
+          <div class="origin horizontalForm clear left">
+            <label>From:</label> 
+            <value>{{comm.fromFirst}} {{comm.fromLast}}</value>
+          </div>
+
+          <div class="date horizontalForm clear left">
+            <label>Date:</label> 
+            <value>{{comm.createdDate}}</value>
+          </div>
+
+          <div class="method horizontalForm clear left">
+            <label>Method:</label>
+            <value>{{comm.commMethod}}</value>
+          </div>
+
+          <div class="desc clear left">
+            {{comm.commDetail}}
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="commNotes">
+            <label>NOTES</label>
+            <div class="subtext oblique">
+              <span>F.M. Flex</span>
+              <span>  //  </span>
+              <span>09-Sep-2014</span>
+            </div>
+            <div class="notes">
+              {{comm.commNotes}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="commLineItem child" ng-repeat="reply in comm.replies">
+      <div class="row">
+        <div class="large-12 columns">
+          <div data-reveal-id="addNote" class="addNoteButton right"></div>
+          <div class="origin horizontalForm clear left">
+            <label>From:</label> 
+            <value>{{reply.fromFirst}} {{reply.fromLast}}</value>
+          </div>
+
+          <div class="date horizontalForm clear left">
+            <label>Date:</label> 
+            <value>{{reply.createdDate}}</value>
+          </div>
+
+          <div class="method horizontalForm clear left">
+            <label>Method:</label>
+            <value>{{reply.commMethod}}</value>
+          </div>
+
+          <div class="desc clear left">
+            {{reply.commDetail}}
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="commNotes">
+            <label>NOTES</label>
+            {{reply.commNotes}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<div id="addNote" class="reveal-modal small" data-reveal>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Add Note</label>
+    </div>
+    <div class="large-12 columns">
+      <textarea placeholder="Enter note content here." class="modalTextarea"></textarea>
+    </div>
+  </div>
+  <div class="row buttonGroup">
+    <button class="primary small button right">SAVE</button>
+    <a class="textOnly small button right custom-close-reveal-modal">CANCEL</a>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+</div>
+
+
+<script>
+
+
+
+</script>

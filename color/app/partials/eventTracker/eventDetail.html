@@ -1,0 +1,359 @@
+<div ng-controller="eventTrackerController">
+
+  <div class="row half-spacer"></div>
+
+  <!-- <div class="row">
+    <div class="large-2 columns">
+      <div class="alert affirmative">OPEN</div>
+    </div>
+  </div> -->
+
+  <div id="toolPanel" class="block row">
+    <div class="large-4 columns">
+      <label>Event Status</label>
+      <select id="eventStatusList">
+      <option value="affirmative">Open</option>
+      <option value="negative">Closed</option>
+      <option value="neutral">Pending</option>
+      </select>
+    </div>
+    <div class="large-4 columns">
+      <label>Change Assignment</label>
+      <select id="assigneeList">
+        <!-- <option disabled selected>Select CSR</option> -->
+        <option ng-repeat="csr in csrList.csr">{{csr.firstName}}  {{csr.lastName}}</option>
+      </select>
+    </div>
+    <div class="large-4 columns">
+      <label>
+        Change Due Date
+        <input id="dueDateInput" type="text" class="datepicker" data-date-format="dd-M-yyyy"/>
+      </label>
+    </div>
+    <div class="large-12 columns">
+      <button class="button toolPanelToggle save tiny right">SAVE</button>
+      <button class="textOnly toolPanelToggle button tiny right">CANCEL</button>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="large-10 columns">
+      <h4 id="eventTitle" class="neutral">Title Status change for Kids Discover 507-156-636</h4>
+        <div class="horizontalForm">
+          <label>Created: </label>
+          <value>01-Sep-2014</value> 
+        </div>
+    </div>
+    <div class="large-2 columns">
+      <button id="toolPanelToggle" class="tiny button right">TOOL PANEL</button>
+    </div>
+    <!-- <div class="large-2 columns">
+      <button id="statusDropdownTrigger" href="" data-dropdown="statusDropdown" aria-controls="statusDropdown" aria-expanded="false" class="tiny status open button dropdown">STATUS: OPEN</button>
+      <ul id="statusDropdown" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+        <li><a href="">PENDING</a></li>
+        <li><a id="statusClosedTrigger" href="">CLOSED</a></li>
+      </ul>
+    </div> -->
+  </div>
+
+  <div id="" class="row horizontalForm displayBlock">
+    <div class="large-12 columns ">
+      <label class="left">Assigned to:</label>
+      <value id="assignee" class="left">Moana Britt</value>
+    </div>
+  </div>
+
+  <div id="" class="row horizontalForm first displayBlock">
+    <div class="large-12 columns ">
+      <label class="left">Title</label>
+      <value class="left">Kids Discover</value>
+    </div>
+    <div class="large-12 columns">
+      <label>Title Number</label>
+      <value>507-156-636</value>
+    </div>
+    <div class="large-12 columns">
+      <label>Format</label>
+      <value>Print</value>
+    </div>
+  </div>
+
+  <div id="" class="row horizontalForm displayBlock">
+    <div class="large-12 columns">
+      <label>Change of Status</label>
+      <value>Discontinued (Previously Active)</value>
+    </div>
+    <div class="large-12 columns">
+      <label>Effective Date</label>
+      <value>01-Sep-2014</value>
+    </div>
+    <div class="large-12 columns">
+      <label>Action Date</label>
+      <value id="dueDate">01-Sep-2014</value>
+    </div>
+  </div>
+
+  <div id="" class="row displayBlock">    
+    <div class="large-12 columns">
+      <label>Description</label>
+      <value>
+        Now only available from Apple as on-line application.
+      </value>
+    </div>
+  </div>
+
+  <div id="" class="row horizontalForm tableBlock">
+    <div class="large-6 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Customers</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="search" ng-model="search.custName">
+          <div class="contentContainer">
+            <div class="maxHeight400">
+              <table>
+                <tr ng-repeat="title in titleData.titleData | filter:search:strict">
+                  <td>{{title.custName}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Orders</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="search" ng-model="search.orderNo">
+          <div class="contentContainer">
+            <div class="maxHeight400">
+              <table>
+                <tr ng-repeat="title in titleData.titleData | filter:search:strict">
+                  <td>{{title.orderNo}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="" class="row tableBlock">    
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-10 columns">
+          <label>Documents</label>
+        </div>
+        <div class="large-2 columns">
+          <button class="tiny right" type="" data-reveal-id="addDocument">ADD DOCUMENT</button>
+        </div>
+      </div>
+      <div class="contentContainer">
+      <table>
+        <tr class="">
+          <td>Summary.doc</td>
+          <td>09.02.2014</td>
+          <td>by Cliff Clye</td>    
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="" class="row notesTable tableBlock">    
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-10 columns">
+          <label>Notes</label>
+        </div>
+        <div class="large-2 columns">
+          <button class="tiny right" type="" data-reveal-id="addNote">ADD NOTE</button>
+        </div>
+      </div>
+      <div class="contentContainer">
+      <table id="">
+        <tr class="custContact">
+          <td>09.02.2014</td>
+          <td>by Cliff Clye</td>
+          <td>Contacted customer on Tuesday - awaiting response.</td>
+        </tr>
+        <tr>
+          <td>09.02.2014</td>
+          <td>by Cliff Clye</td>
+          <td>Changed due date - moved up two days.</td>
+        </tr>
+        <tr class="custContact">
+          <td>09.03.2014</td>
+          <td>by Cliff Clye</td>
+          <td>Customer confirmed.</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMMS -->
+
+<div class="row">
+  <div class="large-9 columns">
+    <label>Communications</label>
+  </div>
+  <div class="large-3 columns">
+    <button class="tiny right" type="" data-reveal-id="addComm">ADD COMMUNICATION</button>
+  </div>
+</div>
+
+  
+
+<div class="row gridBlock">
+  <div class="large-12 columns">
+    <div class="contentContainer">
+      <div class="commLineItem" ng-repeat="comm in comms.communications">
+        <div class="row">
+          <div ng-class="{new: (comm.status == 'new')}" class="large-2 columns">
+            <span class="commID">{{comm.commID}}</span>
+          </div>
+          <div class="large-2 columns">{{comm.fromFirst}} {{comm.fromLast}}</div>
+          <div class="large-6 columns end">
+            <a href="#/commDetail">{{comm.commSummary}}</a>
+          </div>
+          <div class="large-2 columns">{{comm.commMethod}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- MODALS -->
+
+
+<!-- Add Document Modal -->
+
+<div id="addDocument" class="reveal-modal small" data-reveal>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Add Document</label>
+    </div>
+    <div class="full-spacer"></div>
+    <div class="large-12 columns">
+      <div class=""><input type="file" />
+    </div>
+  </div>
+  <div class="row buttonGroup">
+    <button class="primary small button right">SAVE</button>
+    <a class="textOnly small button right custom-close-reveal-modal">CANCEL</a>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+</div>
+
+
+<!-- Add Note Modal -->
+
+<div id="addNote" class="reveal-modal small" data-reveal>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Add Note</label>
+    </div>
+    <div class="large-6 columns end">
+      <select>
+        <option disabled selected>Select Note Type</option>
+        <option>Note</option>
+        <option>Customer Contact</option>
+      </select>
+    </div>
+    <div class="large-12 columns">
+      <textarea placeholder="Enter note content here." class="modalTextarea"></textarea>
+    </div>
+  </div>
+  <div class="row buttonGroup">
+    <button class="primary small button right">SAVE</button>
+    <a class="textOnly small button right custom-close-reveal-modal">CANCEL</a>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+</div>
+
+
+<!-- Add Communication Modal -->
+
+<div id="addComm" class="reveal-modal small" data-reveal>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Add Communication</label>
+    </div>
+    <div class="large-12 columns">
+      <textarea placeholder="Enter communication content here." class="modalTextarea"></textarea>
+    </div>
+  </div>
+  <div class="row buttonGroup">
+    <button class="primary small button right">SAVE</button>
+    <a class="textOnly small button right custom-close-reveal-modal">CANCEL</a>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+</div>
+
+
+
+<script>
+
+componentInit();
+initDatePicker();
+
+$("#toolPanel").hide();
+$("#toolPanelToggle").click(function() {
+  /* Act on the event */
+  $("#toolPanel").toggle(400);
+});
+$(".toolPanelToggle").click(function() {
+  /* Act on the event */
+  $("#toolPanel").toggle(400);
+});
+
+$("#statusClosedTrigger").click(function() {
+  /* Act on the event */
+  $("#statusDropdownTrigger").prev().removeClass('open');
+  $("#statusDropdownTrigger").addClass('closed');
+  $("#statusDropdownTrigger").text("STATUS: CLOSED");
+});
+
+
+
+$(".toolPanelToggle.save").click(function() {
+  /* Act on the event */
+  var assignee = $("#assigneeList option:selected").text();
+  $("#assignee").text(assignee);
+  console.log(assignee);
+
+  var eventTitle = $("#eventStatusList option:selected").val();
+  $("#eventTitle").removeClass();
+  $("#eventTitle").addClass(eventTitle);
+
+  var dueDate = $("#dueDateInput").val();
+  $("#dueDate").text(dueDate);
+});
+
+if ( $(".commStatus").text == 'new') {
+    console.log("y");
+};
+
+
+
+
+</script>
+
+
+
+
+

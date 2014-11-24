@@ -1,0 +1,90 @@
+<div ng-controller="eventTrackerController">
+
+	<!-- FILTER & SEARCH -->
+
+	<div class="row fluid">
+		<div class="large-3 columns">
+			<div class="row collapse">
+			<label>Search</label>
+				<div class="small-9 columns">
+					
+					<input type="search" ng-model="search.$" />
+				</div>
+				<div class="small-3 columns">
+          <a id="filterPanelToggle" href="" class="button postfix filterPanelToggle">FILTERS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div id="filterPanel" class="row fluid filterPanel">
+		<div class="large-3 columns">
+			<label>Event Status</label>
+			<input type="search" ng-model="search.eventStatus" />
+		</div>
+		<div class="large-3 columns">
+			<label>Event Number</label>
+			<input type="search" ng-model="search.eventID" />
+		</div>
+		<div class="large-3 columns">
+			<label>Customer Name</label>
+			<input type="search" ng-model="search.custName" />
+		</div>
+		<div class="large-3 columns">
+			<label>Customer Number</label>
+			<input type="search" ng-model="search.custNumber" />
+		</div>
+	</div>
+
+
+	<table>
+		<thead>
+			<th>Event Status</th>
+			<th>Event ID</th>
+			<th>Market</th>
+			<th>Customer Name</th>
+			<th>Customer Number</th>
+			<th>Category</th>
+			<th>CSR</th>
+			<th>Created</th>
+			<th>Due Date</th>
+		</thead>
+		<tr ng-repeat="event in eventListings.eventListings | filter:search:strict">
+			<td>
+				<div ng-class="{neutral: (event.eventStatus == 'pending'), affirmative: (event.eventStatus == 'open'), negative: (event.eventStatus == 'closed')}" class="eventStatus">
+					{{event.eventStatus}}
+				</div>
+			</td>
+			<td>
+				<a href="#/eventDetail">{{event.eventID}}</a>
+			</td>
+			<td>{{event.market}}</td>
+			<td>{{event.custName}}</td>
+			<td>{{event.custNumber}}</td>
+			<td>{{event.eventCategory}}</td>
+			<td>{{event.csrFirst}} {{event.csrLast}}</td>
+			<td>{{event.createdDate}}</td>
+			<td>{{event.eventDue}}</td>
+		</tr>
+	</table>
+</div>
+
+
+
+<script>
+
+$("#filterPanel").hide();
+
+$("#filterPanelToggle").click(function() {
+	/* Act on the event */
+	$("#filterPanel").toggle(400);
+});
+
+</script>
+
+
+
+
+
+
+

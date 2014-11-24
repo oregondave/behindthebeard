@@ -1,0 +1,24 @@
+{
+	"documents": [
+		{
+			"filename": "FirstContract.pdf",
+			"doctype": "Contract",
+			"dateCreated": "08.14.2014",
+			"description": "A pleasant dinner. Menu is brief but offers a range of choices. A bit noisy even on a Wednesday evening but not overwhelming. If weather had been better we would have tried the patio.",
+			"createdBy": "Jon Siebert",
+			"lastModified": "08.20.2104",
+			"modifiedBy": "Jon Siebert",
+			"url": "/assets/docs/contract.pdf"
+		},
+		{
+			"filename": "PO_001.pdf",
+			"doctype": "Purchase Order",
+			"dateCreated": "08.20.2014",
+			"description": "Purchase Order (1 of 12)",
+			"createdBy": "Alistair Ebert",
+			"lastModified": "---",
+			"modifiedBy": "",
+			"url": "/assets/docs/PO_001.pdf"
+		}
+	]
+}

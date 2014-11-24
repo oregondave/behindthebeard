@@ -1,0 +1,337 @@
+{
+  "cciLines":
+  [
+    {
+      "number": "00001",
+      "description": "Coding Instructions"
+    },
+    {
+      "number": "00002-00009",
+      "description": "Coding Comment"
+    },
+    {
+      "number": "00010",
+      "description": "Current Issue Orders Only"
+    },
+    {
+      "number": "00011",
+      "description": "Carnegie Class #"
+    },
+    {
+      "number": "00020",
+      "description": "Bill Later / Standing Orders Only"
+    },
+    {
+      "number": "00022",
+      "description": "Jeopardy Account"
+    },
+    {
+      "number": "00025",
+      "description": "Cross Referenced to Account XX XXXXX-XX"
+    },
+    {
+      "number": "00026",
+      "description": "Cross Referenced from Account XX XXXXX-XX"
+    },
+    {
+      "number": "00030",
+      "description": "Back Issue Orders Only"
+    },
+    {
+      "number": "00090",
+      "description": "Payment Required Before Processing"
+    },
+    {
+      "number": "00095",
+      "description": "Edit Required Before Processing"
+    },
+    {
+      "number": "00100",
+      "description": "Do Not Process - Refer to Supervisor"
+    },
+    {
+      "number": "00102",
+      "description": "(Explanation) Lines 1-9"
+    },
+    {
+      "number": "00210",
+      "description": "Proforma Account Only"
+    },
+    {
+      "number": "00220",
+      "description": "XXX Common Expire"
+    },
+    {
+      "number": "00230",
+      "description": "No Common Expiration"
+    },
+    {
+      "number": "00250",
+      "description":"Do Not Place 2nd Entry to Keep Sub Current"
+    },
+    {
+      "number": "00300",
+      "description": "Do Not Prorate Over 1 Year"
+    },
+    {
+      "number": "00350",
+      "description": "Prorate at Short Terms if Possible - Will Accept Over 1 Year"
+    },
+    {
+      "number": "00360",
+      "description": "Prorate for 1 Year Plus"
+    },
+    {
+      "number": "00370",
+      "description": "Prorate to Common Expire if One Year Only Enter 2nd Year"
+    },
+    {
+      "number": "00380",
+      "description": "Do Not Prorate for Common Expiration"
+    },
+    {
+      "number": "00400",
+      "description": "Enter Only for Term and Start Date Specified on Customer Order"
+    },
+    {
+      "number": "00520",
+      "description": "Split Invoice by ISC/HEGIS"
+    },
+    {
+      "number": "00521",
+      "description": "Split Invoice by Subscriber"
+    },
+    {
+      "number": "00600",
+      "description": "Do Not Process Without Formal PO"
+    },
+    {
+      "number": "00601",
+      "description": "PO Number Satisfies Formal PO Requirement"
+    },
+    {
+      "number": "00650",
+      "description": "Do Not Combine Ship-Tos"
+    },
+    {
+      "number": "00700",
+      "description": "Do Not Combine PO s"
+    },
+    {
+      "number": "00850",
+      "description": "Use PO # XXXXXXXXXXXXXX Until XX/XX/XX"
+    },
+    {
+      "number": "00900",
+      "description": "Order Cannot Exceed Amt Stated on PO - Notify Customer if Order Exceeds Amt on PO by ..%"
+    },
+    {
+      "number": "00950",
+      "description": "XXXXXXX FTE (# of Full Time Students Enrolled / Employees"
+    },
+    {
+      "number": "01200",
+      "description": "Use C3* Comment"
+    },
+    {
+      "number": "01210",
+      "description": "Use C1* Comment"
+    },
+    {
+      "number": "01300",
+      "description": "HEGIS Numbers Required ="
+    },
+    {
+      "number": "01350",
+      "description": "HEGIS Numbers Reqd in Address on Order to Publ"
+    },
+    {
+      "number": "01410",
+      "description": "ISC Required"
+    },
+    {
+      "number": "01450",
+      "description": "ILS Required"
+    },
+    {
+      "number": "01460",
+      "description": "Delivery Method XXX"
+    },
+    {
+      "number": "01600",
+      "description": "Comment Line X Reqd"
+    },
+    {
+      "number": "01981",
+      "description": "Exclude Proformas from Net Title Markup"
+    },
+    {
+      "number": "01982",
+      "description": "Exclude Account from Net Title Markup"
+    },
+    {
+      "number": "01985",
+      "description": "Add Net Title Markup to Renewal List"
+    },
+    {
+      "number": "01987",
+      "description": "Net Title Markup Fee Override Amount 0000000.00 in Customer Currency"
+    },
+    {
+      "number": "01988",
+      "description": "Low Margin Title Feed Override Amount 0000000.00 in Customer Currency"
+    },
+    {
+      "number": "02000",
+      "description": "Code for Long Terms - See Below"
+    },
+    {
+      "number": "02100",
+      "description": "Where Available - Entire List"
+    },
+    {
+      "number": "02200",
+      "description": "Where Available - 1/3 List"
+    },
+    {
+      "number": "02300",
+      "description": "Only Where Savings - Entire List"
+    },
+    {
+      "number": "02400",
+      "description": "Only Where Savings - 1/3 of List"
+    },
+    {
+      "number": "03000",
+      "description": "Do Not Allow BL/SO Orders"
+    },
+    {
+      "number": "03010",
+      "description": "Do Not Allow Bill Later Orders"
+    },
+    {
+      "number": "03020",
+      "description": "Do Not Allow Standing Orders"
+    },
+    {
+      "number": "04300",
+      "description": "Maximum Inv Amount $XXXXXXX Input at $XXXXXXX"
+    },
+    {
+      "number": "04400",
+      "description": "Special Inv Date XX/XX/XX Use Until XX/XX/XX"
+    },
+    {
+      "number": "25050-25099",
+      "description": "Birmingham JETS XX"
+    },
+    {
+      "number": "25100-25150",
+      "description": "Amsterdam JETS XX"
+    },
+    {
+      "number": "25200-25250",
+      "description": "Tenafly JETS XX"
+    },
+    {
+      "number": "25350-25450",
+      "description": "DC JETS XX"
+    },
+    {
+      "number": "25500-27500",
+      "description": "Birmingham JETS XX"
+    },
+    {
+      "number": "38000",
+      "description": "Customer Requests Access to All Offers of Free Online Jrnl"
+    },
+    {
+      "number": "38001",
+      "description": "Customer Does Not Request Access to Any Offers of Free Online Journals"
+    },
+    {
+      "number": "38002",
+      "description": "Contact Customer on All Offers of Free Online Journal Access"
+    },
+    {
+      "number": "38009",
+      "description": "Customer Subscribes to e-Packages"
+    },
+    {
+      "number": "38020",
+      "description": "Contact:"
+    },
+    {
+      "number": "38021",
+      "description": "Telephone:"
+    },
+    {
+      "number": "38023",
+      "description": "Email:"
+    },
+    {
+      "number": "38024",
+      "description": "Number of Users"
+    },
+    {
+      "number": "38099",
+      "description": "Metapress ID#"
+    },
+    {
+      "number": "40000",
+      "description": "Contact / Correspondence Information"
+    },
+    {
+      "number": "40050",
+      "description": "Customer Internet Address"
+    },
+    {
+      "number": "40100",
+      "description": "ACK All Correspondence"
+    },
+    {
+      "number": "40200",
+      "description": "Telephone /XXX/XXX-XXXX Contact XXXXXXXXXXXXXXX"
+    },
+    {
+      "number": "40201",
+      "description": "Email Address"
+    },
+    {
+      "number": "40202",
+      "description": "FAX Number"
+    },
+    {
+      "number": "40300",
+      "description": "Email Addr"
+    },
+    {
+      "number": "40301",
+      "description": "A/R Contact E-mail Address:"
+    },
+    {
+      "number": "40310",
+      "description": "AR Clerk: XX"
+    },
+    {
+      "number": "40350",
+      "description": "FAX # /XXX/XXX-XXXX"
+    },
+    {
+      "number": "40400",
+      "description": "No Phone Calls - Prefer Mail"
+    },
+    {
+      "number": "81300",
+      "description": "Do Not Mail Renewal List (Explanation) - L1 and L2"
+    },
+    {
+      "number": "89000-89999",
+      "description": "Miscellaneous Comments - 89000"
+    },
+    {
+      "number": "99902",
+      "description": "Renewals On The Web"
+    }
+  ]
+}

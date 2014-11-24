@@ -1,0 +1,175 @@
+<div class="row lame-spacer"></div>
+
+<div class="row">
+  <div class="large-12 medium-12 columns">
+    <h4>Title Details</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Renew</label>
+    <value>YES</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Title Name</label>
+    <value>AAMC Directory of American Medical Education</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Title Number</label>
+    <value>000-476-002</value>
+  </div>
+  <div class="large-3 medium-3 columns labval">
+    <label>Print ISSN</label>
+    <value>0360-7437</value>
+  </div>
+  <div class="large-3 medium-3 columns labval">
+    <label>Online ISSN</label>
+    <value></value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Alternate Format</label>
+    <value></value>
+    <select>
+      <option ng-repeat="format in renewals.format"value="" >{{format.type}}</option>
+    </select>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Publisher</label>
+    <value>AAMC</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Cancellable</label>
+    <value>Yes</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Account Number</label>
+    <value>BR04900-13</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Subscriber Code</label>
+    <value>01</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Subscriber Name</label>
+    <value>DEPARTMENT 01</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Package Name</label>
+    <value></value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Renewal Total</label>
+    <value>105.00</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Currency</label>
+    <value>USD</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Order Number</label>
+    <value>D8966686</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Changes to Renewal?</label>
+    <value>Yes</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Format</label>
+    <value></value>
+    <select>
+      <option ng-repeat="format in renewals.format" value="Online" >{{format.type}}</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Start Date</label>
+    <value>12-01-2013</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Term</label>
+    <value>1 Year(s)</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Quantity</label>
+    <value>1</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>ILS Number</label>
+    <value></value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Fund Code</label>
+    <value></value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+    <label>Usage</label>
+    <value>0</value>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Projected Cost Per Use (USD)</label>
+    <value>0.00</value>
+  </div>
+  <div class="large-6 medium-6 columns labval">
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 columns labval">
+    <label>Title Notes</label>
+    <value></value>
+    <textarea></textarea>
+  </div>
+
+  <div class="large-6 medium-6 columns labval">
+    <label>Renewal Notes</label>
+    <value></value>
+    <textarea></textarea>
+  </div>
+</div>
+
+
+
+
+
+<script>
+
+  initiateZURB();
+  $('.date').fdatepicker({
+    format: 'mm-dd-yyyy'
+  });
+
+</script>

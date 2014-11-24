@@ -1,0 +1,1 @@
+"use strict";proto.directive("myRepeatDirective",function(){return function(t,i,e){t.$last&&initGridJS()}});

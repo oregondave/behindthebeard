@@ -1,0 +1,378 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inline",
+				"inlineEdit"
+			],
+			[
+				"edit",
+				"editLink"
+			],
+			[
+				"light",
+				"light-pom"
+			],
+			[
+				"peter",
+				"peter-river-light"
+			],
+			[
+				"pete",
+				"peter-river"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mediu",
+				"medium-gray"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"med",
+				"medium-gray"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"cu",
+				"customerDetailsData"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"cust",
+				"customerDetails"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ALl",
+				"Allow"
+			],
+			[
+				"O",
+				"Only"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"background",
+				"background-repeat"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 543.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dcaskey/Documents/projects/renewalsWorkflow/3.0/renewals_POC/app"
+	],
+	"file_history":
+	[
+		"/Users/dcaskey/Documents/projects/renewals_POC/3.0/app/scss/ui.proto.scss",
+		"/Users/dcaskey/Documents/projects/renewals_POC/3.0/app/partials/renewals/renewalDetailsNew.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/2.2.1/app/data/renewals/customerDetails.json",
+		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/dcaskey/Documents/projects/renewals_POC/2.2.1/app/scss/ui.proto.scss",
+		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.2.1/renewalDetails.html",
+		"/Volumes/interface/prototype/renewalsWorkflow/renewals-phaseOne/2.2.1/renewalDetails.html",
+		"/Volumes/interface/prototype/renewalsWorkflow/renewals-phaseOne/3.0/renewalDetails.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/2.2/app/partials/renewals/renewalDetailsNew.html",
+		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.2/renewalDetails.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/2.2/app/partials/renewals/renewalSearch.html",
+		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.0/renewals.html",
+		"/Volumes/interface/prototype/renewalsWorkflow/renewals-phaseOne/2.2/renewalDetails.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/js/controllers/renewalsController.js",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/js/services/customerDetailsData.js",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/index.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/js/angular_app.js",
+		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.0/imgebscodp.css",
+		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.0/foundation-4.3.2/index.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/css/foundation-datepicker.css",
+		"/Volumes/interface/prototype/dcaskey/renewalsPOC/app/css/ui.proto.css",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/data/renewals/renewals.json",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/partials/renewals/renewalSearch.html",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/download.svg",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/downloadCloud.svg",
+		"/Users/dcaskey/Downloads/foundation-essentials-5.4.5/css/foundation.css",
+		"/Users/dcaskey/Downloads/foundation-5.4.5/css/foundation.css",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/data/renewals/customerListing.json",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/info.svg",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/tip.svg",
+		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/infoBluex.svg",
+		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dcaskey/Documents/projects/behindthebeard/security.html",
+		"/Users/dcaskey/Documents/projects/foundation-apps-master/package.json",
+		"/Volumes/interface/prototype/dcaskey/renewals-phaseOne/renewals.html",
+		"/Users/dcaskey/Documents/projects/renewals-phaseOne/scss/ui.proto.scss"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 154.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tinder",
+			"subtext",
+			"border-right",
+			"document",
+			"bill",
+			"collapse",
+			"notes",
+			"status",
+			"table",
+			"th",
+			"form",
+			"Section",
+			"section",
+			"END",
+			"section",
+			"collapsed",
+			"table",
+			"button",
+			"textOnly",
+			"micro",
+			"labval",
+			"button",
+			"first",
+			"input",
+			"button",
+			"input",
+			"advSearch",
+			"micro",
+			"pencil",
+			"value",
+			"sub",
+			"35rem",
+			"microtext",
+			"micro",
+			"button",
+			"indexLength",
+			"orig",
+			"index",
+			"form",
+			"center",
+			"section",
+			"collapse",
+			"current",
+			"Description",
+			"CCI-Num",
+			"Description",
+			"CCI-Num",
+			"topbar",
+			"label",
+			"negative",
+			"info",
+			"position",
+			"large",
+			"large-12",
+			"\"renewalStatus\":\"All\",",
+			"\"renewalStatus\":\"3\",",
+			"\"renewalStatus\":\"2\",",
+			"adv",
+			"5rem",
+			"table",
+			"arrow"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"description",
+			"number",
+			"description",
+			"number",
+			"\"renewalStatus\":\"1\",",
+			"\"renewalStatus\":\"4\",",
+			"\"renewalStatus\":\"1\","
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "renewalsPOC.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 403.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

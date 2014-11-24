@@ -1,0 +1,876 @@
+  <div class="fluid row">
+    <div class="large-12 columns">
+      <h4>Renewal Details</h4>
+    </div>
+  </div>
+
+  <div class="fluid row">
+    <div class="large-12 columns">
+      <a class="returnLink" href="#/renewalSearch">&#x3C&#x3C Return to Renewals Listing</a>
+    </div>
+  </div>
+
+  <div class="fluid row contentHeader">
+    <div class="medium-3 columns">
+      <div class="sectionTitle">Portland PSD</div>
+      <div>OR34277-58</div>
+      <div>01-Jun-2014</div>
+    </div>
+    <div class="medium-7 columns">
+      <div class="large-12 columns">
+        <div class="origTotal labvalLeftAlign">
+          <label>Grand Total:</label>
+          <value>
+            <span class="num">1234567.89</span>
+            <span class="currency">USD </span>
+            <span class="indexLength">(71 Line Items)</span>
+          </value>
+        </div>
+      </div>
+    </div>
+    <div class="medium-2 columns labvalLeftAlign">
+      <div class="right">
+      <label>Status:</label>
+      <value><a href="" data-reveal-id="renewalStatusModal">Sent</a></value>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="fluid row">
+    <div id="navTabs" class="large-12 medium-3 columns collapsed">
+      <div class="large-1 large-offset-2 columns collapse">
+        <div id="ordersTab" class="tab">Orders</div>
+      </div>
+      <div class="large-1 columns collapse">
+        <div id="summaryTab"  class="tab">Summary</div>
+      </div>
+      <div class="large-1 columns collapse">
+        <div id="customerTab" class="tab">Customer</div>
+      </div>
+      <div class="large-1 columns collapse">
+        <div id="subscriberTab" class="tab">Subscribers</div>
+      </div>
+      <div class="large-1 columns collapse">
+        <div id="fundCodeTab" class="tab">Fund Codes</div>
+      </div>
+      <div class="large-1 columns collapse">
+        <div id="cciLineTab" class="tab">CCI Lines</div>
+      </div>
+      <div class="large-1 columns collapse">
+        <div class="tab">Events</div>
+      </div>
+      <div class="large-1 columns end collapse">
+        <div id="documentsTab" class="tab">Documents</div>
+      </div>
+    </div>
+    <!-- <div class="large-12 medium-9 columns"  ng-repeat="customer in customerDetails.customer"> -->
+    <div class="large-12 medium-9 columns">
+      <!-- START Orders Tab Content -->
+      <div id='ordersTabContent'  class="row tabContent">
+        <div class="large-12 columns collapse">
+          <div class="contentBlock last">
+            <div class="large-12 columns">
+            <!-- STANDALONE SEARCH -->
+              <div id="" class="row">
+                <div class="large-12 columns">
+                  <label id="simpleSearchTrigger" class="textToggle">SEARCH</label>
+                  <label id="advSearchTrigger" class="textToggle">ADVANCED SEARCH</label>
+                </div>
+              </div>
+              <div id="simpleSearch" class="row collapse">
+                <div class="x-large-3 large-5 medium-6 columns">
+                  <div class="small-11 columns collapse">
+                    <input class="has-subtext" type="search" placeholder="Search by Title"/>
+                  </div>
+                  <div class="small-1 columns collapse">
+                    <a href="" id="" class="button postfix">
+                      <span class="filterPanelToggle"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row" id="advSearch">
+                <div class="x-large-2 large-2 medium-4 columns">
+                  <label>
+                    Title
+                    <input type="search">
+                  </label>
+                </div>
+                <div class="x-large-2 large-2 medium-4 columns">
+                  <label>
+                    Format
+                    <select>
+                      <option></option>
+                    </select>
+                  </label>
+                </div>
+                <div class="x-large-2 large-2 medium-4 columns">
+                  <label>
+                    Subscriber Code
+                    <select>
+                      <option></option>
+                    </select>
+                  </label>
+                </div>
+                <div class="x-large-2 large-2 medium-4 columns">
+                  <label>
+                    Fund Code
+                    <select>
+                      <option></option>
+                    </select>
+                  </label>
+                </div>
+                <div class="x-large-2 large-2 medium-4 end columns">
+                  <label class="invisible">SEARCH</label>
+                  <button class="left icon">
+                    <span class="filterPanelToggle"></span>
+                  </button>
+                  <button id="clearSearchBtn" class="left">Clear Search</button>
+                </div>
+              </div>
+          </div>
+            <div class="large-12 columns">
+              <div class="sectionLabel left">Orders List</div>
+              <div class="right download">
+                <div class="icon right"></div>
+                <div class="prepend-label right">EXPORT</div>
+              </div>
+              <ul class="right pagination">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li class="unavailable"><a href="">&hellip;</a></li>
+                <li><a href="">12</a></li>
+                <li><a href="">13</a></li>
+                <li class="arrow"><a href="">&raquo;</a></li>
+              </ul>
+            </div>
+            <div class="large-12 columns">
+              <div class="tableWrap">
+                <div class="scrolltable">
+                  <table>
+                    <tr>
+                      <th>Title</th>
+                      <th>Format</th>
+                      <th>Publisher</th>
+                      <th>Start Date</th>
+                      <th>Term</th>
+                      <th>Qty</th>
+                      <th>Sub Code</th>
+                      <th>Fund Code</th>
+                      <th>Total</th>
+                      <th class="last">Currency</th>
+                    </tr>
+                    <tr ng-repeat="order in orders.orders">
+                      <td class="_240">{{order.title}}</td>
+                      <td class="nowrap">{{order.format}}</td>
+                      <td class="_240">{{order.publisher}}</td>
+                      <td class="nowrap">{{order.startDate}}</td>
+                      <td class="nowrap">{{order.term}}</td>
+                      <td class="nowrap num">{{order.quantity}}</td>
+                      <td class="nowrap">{{order.subscriberCode}}</td>
+                      <td class="nowrap">{{order.fundCode}}</td>
+                      <td class="nowrap num">{{order.renewalTotal | number:2}}</td>
+                      <td class="nowrap">{{order.currency}}</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Orders Tab Content -->
+
+
+      <!-- START Summary Tab Content -->
+    <div id='summaryTabContent'  class="row tabContent">
+      <div class="x-large-6 x-large-centered large-8 large-centered columns collapse labvalLeftAlign">
+        <!-- START Status History -->
+        <div class="contentBlock">
+          <div class="sectionLabel">Status History</div>
+          <div class="tableWrap">
+          <div class="scrolltable">
+          <table>
+            <tr>
+              <th class="">Status</th>
+              <th class="">Note</th>
+              <th class="">User</th>
+              <th class="last">Date</th>
+            </tr>
+            <tr>
+            <td >Status Name</td>
+            <td>
+            Status note added by user.
+            </td>
+            <td >First Last</td>
+            <td >12-Oct-2014</td>
+            </tr>
+          </table>
+          </div>
+          </div>
+        </div>
+      <!-- END Status History -->
+
+      <!-- START Notes -->
+        <div class="contentBlock">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="sectionLabel left">Notes</div>
+              <a href=""class="inlineHiddenButton right" data-reveal-id="notesModal">
+                <div class="inlineHiddenButtonText left">EDIT</div>
+                <div class="editSA right"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row labvalOverUnder lineItem" ng-repeat="note in customer.renewalNote">
+            <div class="large-12 columns">
+              <label>Renewal Note:</label>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+            <div class="large-12  columns">
+              <value>{{note.note}}</value>
+            </div>
+          </div>
+
+          <div class="row labvalOverUnder lineItem" ng-repeat="note in customer.deliveryNote">
+            <div class="large-12 columns">
+              <label>Delivery Note:</label>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+            <div class="large-12 columns">
+              <value>{{note.note}}</value>
+            </div>
+          </div>
+
+          <div class="row labvalLeftAlign lineItem" ng-repeat="note in customer.renewalSentDate">
+            <div class="large-12 columns">
+              <label>Renewal Sent:</label>
+              <value>{{note.date}}</value>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+          </div>
+
+          <div class="row labvalLeftAlign lineItem" ng-repeat="note in customer.expectedReturnDate">
+            <div class="large-12 columns">
+              <label>Expected Return Date:</label>
+              <value>{{note.date}}</value>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+          </div>
+
+          <div class="row labvalLeftAlign lineItem" ng-repeat="note in customer.tender">
+            <div class="large-12 columns">
+              <label>Tender / Bid:</label>
+              <value>{{note.status}}</value>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+            <div class="large-12 columns labvalOverUnder">
+              <value>{{note.note}}</value>
+            </div>
+          </div>
+
+        </div>
+      <!-- END Notes -->
+
+      <!-- START Representatives -->
+        <div class="contentBlock last">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="sectionLabel">Representatives</div>
+        </div>
+        <div class="large-12 columns labvalLeftAlign">
+          <label>CSR:</label>
+          <value>Name</value>
+        </div>
+        <div class="large-12 columns labvalLeftAlign">
+          <label>ASM:</label>
+          <value>Name</value>
+        </div>
+        <div class="large-12 columns labvalLeftAlign">
+          <label>Sales Representative:</label>
+          <value>Name</value>
+        </div>
+      </div>
+    </div>
+      <!-- END Representatives -->
+
+      </div>
+    </div>
+  <!-- END Sumary Tab Content -->
+
+
+
+  <!-- START Customer Tab Content -->
+    <div id='customerTabContent'  class="row tabContent">
+    <div class="large-8 large-centered collapse columns  labvalLeftAlign">
+
+      <!-- START Bill-to -->
+        <div class="contentBlock last">
+          <div class="row">
+            <div class="large-6 columns">
+              <div class="sectionLabel">Bill-to Details</div>
+              <div class="row">
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Address 1:</label>
+                <value>{{customer.billingAddress1}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Address 2:</label>
+                <value>{{customer.billingAddress2}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Address 3:</label>
+                <value>{{customer.billingAddress3}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Firm</label>
+                <value>{{customer.firm}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Invoice Later</label>
+                <value>{{customer.invoiceLater}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>ISC</label>
+                <value>{{customer.ISC}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Max Invoice Amount</label>
+                <value>{{customer.maxInvAmt | number}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Max Handling Charge</label>
+                <value>% {{customer.maxSC}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Sales Representative</label>
+                <value>{{customer.salesRep}}</value>
+              </div>
+              </div>
+            </div>
+
+      <!-- END Bill-to -->
+
+            <!-- START Representatives -->
+            <div class="large-6 columns respSpaceHead">
+              <div class="sectionLabel">Representatives</div>
+              <div class="row">
+              <div class="large-12 columns labvalLeftAlign">
+                <label>CSR:</label>
+                <value>Name</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>ASM:</label>
+                <value>Name</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Sales Representative:</label>
+                <value>Name</value>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- END Representatives -->
+
+  </div>
+  </div>
+  <!-- END Customer Tab Content -->
+
+
+  <!-- START Subscriber Tab Content -->
+    <div id='subscriberTabContent'  class="row tabContent">
+    <div class="x-large-6 x-large-centered large-8 large-centered columns collapse labvalLeftAlign">
+
+      <div class="contentBlock last">
+        <div class="row">
+          <div class="large-12 columns labvalLeftAlign">
+            <div class="sectionLabel">Subscriber Details</div>
+            <div class="tableWrap">
+            <div class="scrolltable">
+            <table>
+              <tr>
+                <th class="center">Code</th>
+                <th class="center">Address</th>
+                <th class="center">Line Items</th>
+                <th class="center">Currency</th>
+                <th class="center last">Subtotal</th>
+              </tr>
+              <tr ng-repeat="suffix in customer.suffixAccounts">
+                <td class="center fixedWidth-6">{{suffix.subscriberCode}}</td>
+                <td>
+                    <div>{{suffix.customerName}}</div>
+                    <div>{{suffix.billingAddress1}}</div>
+                    <div>{{suffix.billingAddress2}}</div>
+                    <div>{{suffix.billingAddress3}}</div>
+                </td>
+                <td class="num fixedWidth-6">{{suffix.lineItems | number}}</td>
+                <td class="num fixedWidth-6">{{suffix.currency}}</td>
+                <td class="num fixedWidth-6">{{suffix.subTotal | number}}</td>
+              </tr>
+            </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  <!-- END Subscriber Tab Content -->
+
+  <!-- START Fund Codes Tab Content -->
+  <div id='fundCodeTabContent' class="row tabContent" >
+  <div class="x-large-6 x-large-centered large-8 large-centered columns collapse labvalLeftAlign">
+
+    <div class="contentBlock last">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="sectionLabel">Fund Codes</div>
+          <div class="tableWrap">
+            <div class="scrolltable">
+              <table>
+                <tr>
+                <th class="center">Code</th>
+                <th class="center">Line Items</th>
+                <th class="center">Currency</th>
+                <th class="center last">Subtotal</th>
+                </tr>
+                <tr ng-repeat="fundCode in customer.fundCodes">
+                <td class="center fixedWidth-6">{{fundCode.fundCode}}</td>
+                <td class="num fixedWidth-6">{{fundCode.lineItems | number}}</td>
+                <td class="center fixedWidth-6">{{fundCode.currency}}</td>
+                <td class="monetaryTotal fixedWidth-6">{{fundCode.subTotal | number}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- END Fund Codes Tab Content -->
+
+
+  <!-- START CCI Lines Tab Content -->
+  <div id='cciLineTabContent' class="row tabContent">
+  <div class="x-large-6 x-large-centered large-8 large-centered columns collapse">
+
+    <div class="contentBlock last">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="sectionLabel">CCI Lines</div>
+          <div class="tableWrap">
+            <div class="scrolltable">
+              <table>
+                <tr>
+                    <th>CCI Number</th>
+                    <th>CCI Line Description</th>
+                </tr>
+                <tr ng-repeat="cciLine in CCILines.cciLines">
+                    <td class="align-right">{{cciLine.number}}</td>
+                    <td>{{cciLine.description}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- END CCI Lines Tab Content -->
+
+
+  <!-- START Documents Tab Content -->
+  <div id='documentsTabContent' class="row tabContent">
+  <div class="large-12 large-centered collapse columns">
+
+    <div class="contentBlock last">
+      <div class="row">
+        <div class="large-8 medium-12 large-centered columns">
+          <div class="right">
+            <a id="newDocTrigger" class="button tiny" data-reveal-id="addDocumentModal">Add Document</a>
+          </div>
+          <table id="documentsGrid">
+            <tr>
+              <th class="center">Document</th>
+              <th class="center">Description</th>
+              <th class="center">Last Modified</th>
+              <th class="center"></th>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="docTitle"><a title="Download or Access Document">untitled.txt</a></div>
+                <div class="docType">[Contract]</div>
+              </td>
+              <td>
+                <div class="doc-description left large-10 columns">Contract for UCF. Customer plans to renew biannualy. Contract will expire on 2/17/2016.</div>
+                <button class="left large-2 columns tiny">EDIT</button>
+                <!-- <a class="editLink js-doc-description" title="Edit Document Description" data-reveal-id="documentDescriptionModal" >EDIT</a> -->
+              </td>
+              <td class="fixedWidth-6">17-Oct-2014 by <strong>GAdams</strong></td>
+              <td class="center fixedWidth-6">
+                <div class="deleteBtnTiny tiny button" data-reveal-id="deleteDocumentModal">
+                  <span class="deleteIcon"></span>
+                  <span class="text">Delete</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="docTitle"><a title="Download or Access Document">UCF-Auth.docx</a></div>
+                <div class="docType">[Authorization Letter]</div>
+              </td>
+              <td>
+                <div class="doc-description">Authorization letter for UCF (1 of 2)</div>
+                <a class="editLink js-doc-description" data-reveal-id="documentDescriptionModal" title="Edit Document Description">EDIT</a>
+              </td>
+              <td>12-Aug-2014 by <strong>GAdams</strong></td>
+              <td class="center">
+                <div class="deleteBtnTiny tiny button" data-reveal-id="deleteDocumentModal">
+                  <span class="deleteIcon"></span>
+                  <span class="text">Delete</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="deleted">
+              <td>
+                <div class="docTitle"><a title="Download or Access Document">delivery-requirements.docx</a></div>
+                <div class="docType">[Other]</div>
+              </td>
+              <td>
+                <div class="doc-description">Supplemental Document for UCF</div>
+                <a class="editLink js-doc-description" data-reveal-id="documentDescriptionModal" title="Edit Document Description">EDIT</a>
+              </td>
+              <td>12-Aug-2014 by <strong>GAdams</strong></td>
+              <td class="center">
+                  <div class="alert-text">DELETED</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- END Documents Tab Content -->
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+<!-- MODALs -->
+<!-- Status Modal -->
+<div id="renewalStatusModal" class="reveal-modal small" data-reveal>
+<form>
+  <div class="fluid row">
+    <div class="large-12 columns">
+      <h4>Renewal Status</h4>
+    </div>
+  </div>
+  <div class="fluid row">
+    <div class="x-large-4 large-12 columns labvalOverUnder">
+      <label >Select Status</label>
+      <select class="js-field-select">
+        <option value="Sent">Sent</option>
+        <option value="Received">Received</option>
+        <option value="Automatic">Automatic</option>
+        <option value="InProgress">In Progress</option>
+        <option value="Pro-formaCreated">Pro-forma Created</option>
+        <option value="Pro-formaReceived">Pro-forma Received</option>
+        <option value="Closed">Closed</option>
+        <option value="Cancelled" class="cancelled">Cancelled</option>
+        <option value="Deleted">Deleted</option>
+      </select>
+    </div>
+    <div class="x-large-8 end large-12 medium-12 columns labvalOverUnder">
+      <label>Status Note</label>
+      <textarea>Add notes here.</textarea>
+      <!-- <span class="microtext subtext right"><i>Last updated by <strong>M Waddams</strong> 11/24/2013 3:30PM CST</i></span> -->
+    </div>
+  </div>
+
+  <div class="fluid row">
+    <div class="x-large-12 large-12 columns labvalOverUnder textBlock">
+      <div class="hidden-field cancelled">
+
+        <div class="sectionLabel">Reason for cancellation:</div>
+        <div class="x-large-4 columns ">
+          <div class="large-6 columns collapsed">
+            <label><input type="radio" name="cancelledStatusRadio" checked>Going to another agent:</label>
+          </div>
+          <div class="large-12 columns">
+            <label><input type="radio" name="cancelledStatusRadio">Budget</label>
+          </div>
+          <div class="large-12 columns end">
+            <label><input type="radio" name="cancelledStatusRadio">Other</label>
+          </div>
+        </div>
+        <div class="x-large-4 end columns">
+            <select>
+            <option value="1">Direct</option>
+            <option value="2">Harrassowitz</option>
+            <option value="3">LM</option>
+            <option value="4">Basch</option>
+            <option value="5">French Periodicals</option>
+            <option value="6">Consortia</option>
+            <option value="7">WT Cox</option>
+            <option value="8">Other</option>
+            </select>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="large-12 columns right buttonRow">
+    <a class="button small right">Save</a>
+    <a class="custom-close-reveal-modal button small right textOnly">Cancel</a>
+
+  </div>
+<a class="close-reveal-modal">&#10005;</a>
+</form>
+</div>
+
+
+<!-- Notes Modal -->
+<div id="notesModal" class="reveal-modal small" data-reveal>
+  <form>
+  <h4>Renewal Notes</h4>
+
+  <div class="large-6 columns labvalOverUnder">
+    <label>Renewal Note</label>
+    <textarea></textarea>
+  </div>
+
+  <div class="large-6 columns labvalOverUnder">
+    <label>Delivery Note</label>
+    <textarea></textarea>
+  </div>
+
+  <div class="large-6 columns labvalOverUnder">
+    <label>Renewal Sent Date</label>
+    <input type="text" class="datepicker" />
+  </div>
+
+  <div class="large-6 columns labvalOverUnder">
+  <label>Expected Return Date</label>
+  <input type="text" class="datepicker" />
+  </div>
+
+  <div class="large-6 columns labvalOverUnder">
+  <label>Tender / Bid</label>
+  <select>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+  </div>
+
+  <div class="large-6 columns labvalOverUnder">
+  <label>Tender / Bid Note</label>
+  <textarea></textarea>
+  </div>
+
+  <div class="large-12 columns right">
+    <a class="button right">Save</a>
+    <a class="custom-close-reveal-modal button right textOnly">Cancel</a>
+
+  </div>
+<a class="close-reveal-modal">&#10005;</a>
+
+  </form>
+</div>
+
+<!-- Add Document Modal -->
+<div id="addDocumentModal" class="reveal-modal small">
+    <h3>Add New Document</h3>
+    <form>
+        <div class="row">
+            <div class="large-12 columns">
+                <label style="display: inline; margin-right:6px;"><input type="radio" name="DocumentAddMethod" checked class="js-field-select-radio" data-field="localFile" style="margin-right:2px;"/>Upload Local File</label>
+                <label style="display: inline;"><input type="radio" class="js-field-select-radio" data-field="hyperlink" name="DocumentAddMethod" style="margin-right:2px;" />Add File Via Hyperlink</label>
+            </div>
+        </div>
+        <br/>
+        <div class="row hidden-field hyperlink">
+            <div class="large-12 columns">
+                <input type="text" placeholder="http://..." />
+            </div>
+        </div>
+        <div class="row hidden-field localFile">
+            <div class="small-12 columns"> <input type="file" /></div>
+
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <label>Document Type</label>
+                <select>
+                    <option>-Select Type -</option>
+                    <option>Authorization Letter</option>
+                    <option>Cancellation Letter</option>
+                    <option>Contract</option>
+                    <option>Other</option>
+                    <option>Pro-Forma Invoice</option>
+                    <option>Purchase Order</option>
+                    <option>Renewal</option>
+                    <option>Renewal Instructions</option>
+                </select>
+            </div>
+            <div class="large-12 columns">
+                <label>Description <small>REQUIRED</small></label>
+                <textarea maxlength="500" placeholder="Add Description..."></textarea>
+            </div>
+        </div>
+
+        <div class="row buttonGroup">
+            <div class="small-12 columns text-right">
+                <a class="textOnly small button custom-close-reveal-modal">CANCEL</a> <a class="primary small button">ATTACH</a>
+            </div>
+        </div>
+
+        <a class="close-reveal-modal">&#10005;</a>
+    </form>
+</div>
+
+<!-- Delete Document Modal -->
+<div id="deleteDocumentModal" class="reveal-modal small">
+    <h3>Delete Document</h3>
+    <p>Item will still appear in the grid, but will be marked as deleted.</p> <p>Do you wish to delete the document?</p>
+    <div class="row buttonGroup text-right">
+        <a class="textOnly small button custom-close-reveal-modal">CANCEL</a> <a class="primary small button">SAVE</a>
+    </div>
+</div>
+
+
+<!-- Document Description Modal -->
+<div id="documentDescriptionModal" class="reveal-modal medium">
+    <h3>Document Description</h3>
+    <div class="row">
+        <div class="large-12 columns">
+            <textarea maxlength="500" id="docDescriptionTextArea"></textarea>
+        </div>
+    </div>
+    <div class="row buttonGroup text-right">
+        <a class="textOnly small button custom-close-reveal-modal">CANCEL</a> <a class="primary small button">SAVE</a>
+    </div>
+</div>
+
+<script>
+
+
+
+$(".tabContent").hide();
+
+
+$("#navTabs .tab").click(function(event) {
+  /* Act on the event */
+  $('.tab').removeClass('active');
+  $(this).addClass('active');
+  $(".tabContent").hide();
+
+  var ID = $(this).get(0).id;
+  var target = "#" + ID + "Content";
+  $(target).show();
+});
+
+$('.num').formatNumber();
+
+  /*field switching - used in Status modal*/
+  $(".hidden-field").hide();
+    $('.js-field-select').change(function(){
+      var selectedClass = $("option:selected", this)[0].className;
+      $(this).closest("form").find(".hidden-field").hide();
+      if (selectedClass != '') {
+
+          $(this).closest("form").find("." + selectedClass).show();
+      }
+  });
+  $('select.js-field-select').trigger("change");
+
+
+var modal = $('.custom-close-reveal-modal').closest('.reveal-modal');
+  $('.custom-close-reveal-modal').click(function(){
+    $(modal).foundation('reveal', 'close');
+  });
+
+
+// $("#ordersTab").trigger("click");
+
+ /*Upload Document modal */
+        /*switchable forms radio buttons...*/
+        $(".js-field-select-radio").change(function () {
+            if ($(this).is(":checked")) {
+                $(this).closest('form').find('.hidden-field').hide();
+                var selectedClass = $(this).attr("data-field");
+                $(this).closest('form').find("." + selectedClass).show();
+            }
+        });
+        $(".js-field-select-radio").trigger('change');
+
+        //trigger reveal close from button
+        $("a.custom-close-reveal-modal").click(function () {
+            $(this).closest(".reveal-modal").foundation('reveal', 'close');
+        });
+
+        //carry description text over to edit modal
+        $(".editLink").click(function () {
+          console.log("y");
+            var desctext = $(this).closest("tr").find("span.js-doc-description").text();
+            $("#documentDescriptionModal").find("textarea").val(desctext);
+        });
+
+// Search/Filter scripts //
+$("#advSearch").hide();
+$("#advSearchTrigger").addClass('toggleOff');
+
+$("#simpleSearchTrigger").click(function() {
+    /* Act on the event */
+    $("#simpleSearch").show(400);
+    $("#advSearch").hide(400);
+    $("#simpleSearchTrigger").removeClass('toggleOff');
+    $("#advSearchTrigger").addClass('toggleOff');
+});
+$("#advSearchTrigger").click(function() {
+    /* Act on the event */
+    $("#advSearch").show(400);
+    $("#simpleSearch").hide(400);
+    $("#advSearchTrigger").removeClass('toggleOff');
+    $("#simpleSearchTrigger").addClass('toggleOff');
+});
+
+
+  initDatePicker();
+</script>
+
+
+
+
+
+
+
+
+
+

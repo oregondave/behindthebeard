@@ -1,0 +1,40 @@
+{
+	"CCILines": [
+		{
+			"code": "00070",
+			"description":"Is the customer a slow pay?"
+		},
+		{
+			"code": "38009",
+			"description":"Customer subscribes to E-Packages."
+		},
+		{
+			"code": "00520",
+			"description":"Should the Invoice be split by HEGIS?"
+		},
+		{
+			"code": "00521",
+			"description":"Should the Invoice be split by subscriber?"
+		},
+		{
+			"code": "00600",
+			"description":"Does the customer require a formal PO?"
+		},
+		{
+			"code": "00650",
+			"description":"Should Ship to’s be combined?"
+		},
+		{
+			"code": "04300",
+			"description":"Does the customer want a block of invoices?"
+		},
+		{
+			"code": "04400",
+			"description":"Does the customer have a special invoice date?"
+		},
+		{
+			"code": "99902",
+			"description":"Did the customer submit and EBSCONET renewal?"
+		}
+	]
+}

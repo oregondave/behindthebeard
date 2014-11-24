@@ -1,0 +1,1 @@
+proto.factory("CCILinesData",function(t){return{getData:function(){return t("data/renewals/:id",{id:"@id"}).get({id:"cci-lines.json"})}}});

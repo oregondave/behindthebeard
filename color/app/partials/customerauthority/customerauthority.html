@@ -1,0 +1,604 @@
+<!-- <div id="suffixListing">
+	<div class="row">
+	  	<div class="large-12 columns">
+	  		<h4 class="subheader">Account Details</h4>
+	  		<table>
+		  		<thead>
+			  		<tr>
+			  			<th>Account Name</th>
+				  		<th>Account ID</th>
+				  		<th>Address</th>
+				  		<th>City</th>
+				  		<th>State</th>
+				  		<th>ZIP</th>
+				  	</tr>
+		  		</thead>
+		  		<tbody>
+		  			<tr class="active">
+		  				<td>Mr. Sparkle <span class="trailingContextProvider microtext">(primary)</span></td>
+		  				<td>
+		  					<a href="" id="mainDetailsTrigger">08120</a>
+		  				</td>
+		  				<td>100 Stark Street</td>
+		  				<td>Portland</td>
+		  				<td>OR</td>
+		  				<td>97215</td>
+		  			</tr>
+		  			<tr class="clickableRow" href="#/subAccountAdminForm">
+		  				<td class="subAccount">Sideshow</td>
+		  				<td class="subAccountID">
+		  					<a href="#/subAccountAdminForm" id="detailsTrigger">08123</a>
+		  				</td>
+		  				<td>123 Terwilliger Blvd.</td>
+		  				<td>Albuquerque</td>
+		  				<td>NM</td>
+		  				<td>35236</td>
+		  			</tr>
+		  			<tr>
+		  				<td class="subAccount">Hi Diddly Ho There</td>
+		  				<td class="subAccountID">08124</td>
+		  				<td>456 Flanders</td>
+		  				<td>Portland</td>
+		  				<td>OR</td>
+		  				<td>97215</td>
+		  			</tr>
+		  			<tr>
+		  				<td class="subAccount">Excellent</td>
+		  				<td class="subAccountID">08125</td>
+		  				<td>789 Burnside SE</td>
+		  				<td>Tacoma</td>
+		  				<td>WA</td>
+		  				<td>87523</td>
+		  			</tr>
+		  			<tr>
+		  				<td class="subAccount">Chowdah</td>
+		  				<td class="subAccountID">08126</td>
+		  				<td>101 Quimby Terrace</td>
+		  				<td>Memphis</td>
+		  				<td>TN</td>
+		  				<td>01534</td>
+		  			</tr>
+		  			<tr>
+		  				<td class="subAccount">D'oh!</td>
+		  				<td class="subAccountID">08127</td>
+		  				<td>742 Evergreen Terrace</td>
+		  				<td>Springfield</td>
+		  				<td>OR</td>
+		  				<td>97523</td>
+		  			</tr>
+		  		</tbody>
+	  		</table>
+	  	</div>
+	</div>
+</div> -->
+
+<div id="accountDetails">
+  	<div class="row">
+  	<form>
+  		<div class="large-12 columns">
+  			<h4 class="subheader">Summary of Account Information</h4>
+  		</div>
+  		<div class="large-4  medium-4 columns">
+  			<ul class="nav sidebar">
+  				<li id="custProfileTrigger" class="active">Customer Profile</li>
+  				<li id="billingAddressTrigger">Billing Address</li>
+  				<li id="shippingAddressTrigger">Shipping Address</li>
+  				<li id="billingProfileTrigger">Billing Profile</li>
+  				<li id="invoicingOptionsTrigger">Invoicing Options</li>
+  				<li id="contactsListTrigger">Contacts</li>
+  				<li id="csrListTrigger">Customer Representatives</li>
+  				<li id="CCILinesTrigger">CCI Lines</li>
+  				<!-- <li>Miscellaneous</li>
+  				<li>Order Entry Instructions</li>
+  				<li>Pricing Settings</li>
+  				<li>Renewal Settings</li>
+  				<li>Tax Settings</li> -->
+  			</ul>
+  		</div>
+
+
+
+  		<div id="formContainer" class="large-8  medium-8 columns">
+
+  		<div id="custProfile" class="large-12  medium-12 columns">
+  			<div class="row">
+  				<div class="large-4 columns">
+			  		<label>Customer ID</label>
+			  		<input type="text" placeholder="08120" value="08120" />
+			  	</div>
+				</div>
+
+  			<div class="row">
+  				<div class="large-12 columns">
+			  		<label class="">Organization Name</label>
+			  		<input class="" type="text" placeholder="Organization Name" value="Mr. Sparkle" />
+			  	</div>
+				</div>
+
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Office</label>
+						<input type="text" placeholder="Office Name" value="Headquarters - MAIN" />
+					</div>
+					<div class="large-6 medium-6 columns">
+						<label>Market</label>
+						<select>
+						<option value="B" selected="yes">USA  (United States of America)</option>
+						<option value="E" >E (South Eastern Subscription Agency)</option>
+						<option value="F">F (Fake Renewal)</option>
+						<option value="J">J (Major Accounts)</option>
+						<option value="M">M (Moore Cottrell)</option>
+						<option value="P">P (Telephone Sales)</option>
+						<option value="R">R (Regular)</option>
+						<option value="S">S (Automatic Renewal)</option>
+						<option value="T">T (True Automatic Renewal)</option>
+						<option value="X">F (FAXON Accounts)</option>
+						<option value="W">W (SUPC Consortium Accounts)</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>FTE Count</label>
+						<select>
+						<option value="" selected="yes">1 - 100</option>
+						<option value="">101 - 500</option>
+						<option value="">501 - 1000</option>
+						<option value="">1001 - 1500</option>
+						<option value="">1501 - 2000</option>
+						<option value="">2001 - 5000</option>
+						<option value="">5001 - 10000</option>
+						<option value="">10001 +</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div id="billingAddress" class="large-12  medium-12 columns">
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Address</label>
+			  		<input type="text" placeholder="Address" value="100 Stark Street" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Address 2</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Address 3</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>City</label>
+			  		<input type="text" placeholder="City" value="Portland" />
+					</div>
+					<div class="large-6 medium-6 columns">
+		  			<label>State</label>
+			  		<select>
+							<option ng-repeat="state in states.states">{{state.name}}</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>ZIP</label>
+			  		<input type="text" placeholder="ZIP Code" value="97215" />
+					</div>
+					<div class="large-6 medium-6 columns">
+		  			<label>Country</label>
+			  		<select>
+							<option ng-repeat="country in countries.countries">{{country.name}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div id="shippingAddress" class="large-12  medium-12 columns">
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>Shipping Profile ID</label>
+			  		<input type="text" placeholder="AkaName" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Address</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Address 2</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Address 3</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>City</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+					<div class="large-6 medium-6 columns">
+		  			<label>State</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>ZIP</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+					<div class="large-6 medium-6 columns">
+		  			<label>Country</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Description</label>
+						<textarea placeholder="JeopardyAccountComments" />
+					</div>
+				</div>
+			</div>
+
+			<div id="billingProfile" class="large-12  medium-12 columns">
+  			<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Credit Card Required?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+					<div class="large-6 medium-6 columns">
+						<label>EDI Required?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+				</div>
+				<br />
+				<br />
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Has Bad Debt?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+					<div class="large-6 medium-6 columns">
+						<label>ILS Required?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+				</div>
+				<br />
+				<br />
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Proforma Only?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 medium-12 columns">
+		  			<label>Description</label>
+						<textarea placeholder="JeopardyAccountComments" />
+					</div>
+				</div>
+			</div>
+
+			<div id="invoicingOptions" class="large-12  medium-12 columns">
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>Max Amount</label>
+			  		<input type="text" placeholder="AkaName" />
+					</div>
+					<div class="large-6 medium-6 columns">
+		  			<label>Max Line Items</label>
+			  		<input type="text" placeholder="AkaName" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>Number of Copies</label>
+			  		<input type="text" placeholder="AkaName" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Consolidated?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+					<div class="large-6 medium-6 columns">
+						<label>Invoice by Product?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+				</div>
+				<br />
+				<br />
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Print SIMPLEX?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+					<div class="large-6 medium-6 columns">
+						<label>Split by HEGIS?</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+						<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+						<br />
+					</div>
+				</div>
+				<div class="full-spacer"></div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+						<label>Invoice Number</label>
+						<input type="text" name="" value="" placeholder"Starting Invoice Number">
+					</div>
+					<div class="large-6 medium-6 columns">
+						<label>Invoice Number Range</label>
+						<input type="number" name="" value="" placeholder="Enter number of invoices">
+					</div>
+				</div>
+			</div>
+
+			<div id="contactsList" class="large-12  medium-12 columns">
+				<div class="row">
+					<div class="large-2 medium-2 columns">
+		  			<label>Honorific</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+					<div class="large-3 medium-3 columns">
+		  			<label>First Name</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+					<div class="large-3 medium-4 columns">
+		  			<label>Middle Name</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+					<div class="large-4 medium-4 columns">
+		  			<label>Last Name</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-6 medium-6 columns">
+		  			<label>Email</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+					<div class="large-6 medium-6 columns">
+		  			<label>Phone</label>
+			  		<input type="text" placeholder="Address" />
+					</div>
+				</div>
+			</div>
+
+			<div id="csrList" class="large-12  medium-12 columns">
+
+			</div>
+
+			<div id="CCILines" class="large-12  medium-12 columns">
+				<label ng-repeat="CCI in CCI.CCILines" >
+					<input type="checkbox" name="vehicle" value="Bike"> {{CCI.code}} - {{CCI.description}}
+					<br />
+				</label>
+			</div>
+
+<!-- 
+			<br />
+			<br />
+			<div class="row">
+			  	<div class="large-6  medium-6 columns">
+			  		<label>Customer carries bad debt?</label>
+					<label class="radio left"><input type="radio" name="badDebt" value="Yes">  Yes</label>
+
+					<label class="radio left"><input type="radio" name="badDebt" value="No">  No</label>
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>Bad debt comments</label>
+					<textarea name="BadDebtComments"></textarea>
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>Customer class</label>
+					<select>
+					<option value="B">B (Bid)</option>
+					<option value="E">E (South Eastern Subscription Agency)</option>
+					<option value="F">F (Fake Renewal)</option>
+					<option value="J">J (Major Accounts)</option>
+					<option value="M">M (Moore Cottrell)</option>
+					<option value="P">P (Telephone Sales)</option>
+					<option value="R">R (Regular)</option>
+					<option value="S">S (Automatic Renewal)</option>
+					<option value="T">T (True Automatic Renewal)</option>
+					<option value="X">F (FAXON Accounts)</option>
+					<option value="W">W (SUPC Consortium Accounts)</option>
+					</select>
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>Customer Category Code</label>
+					<input type="number" placeholder="CustomerCatCode" />
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="large-4 medium-4 columns">
+					<label>Cluster 1 ID</label>
+					<input type="text" placeholder="Cluster 1" />
+				</div>
+				<div class="large-4 medium-4 columns">
+					<label>Cluster 2 ID</label>
+					<input type="text" placeholder="Cluster 2" />
+				</div>
+				<div class="large-4 medium-4 columns">
+					<label>Cluster 3 ID</label>
+					<input type="text" placeholder="Cluster 3" />
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>Does Customer subscribe to ePackages?</label>
+					<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="Yes">  Yes</label>
+					<label class="radio left"><input type="radio" name="CustomerSubscribesToEpackages" value="No">  No</label>
+					<br />
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>EBSCOHOST Customer ID</label>
+					<Input type="text" placeholder="EbscohostCustId" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>EBSCONET Customer?</label>
+					<label class="radio left"><input type="radio" name="EbsconetCustomer" value="Yes">  Yes</label>
+					<label class="radio left"><input type="radio" name="EbsconetCustomer" value="No">  No</label>
+					<br />
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>Fund Code</label>
+					<input type="number" placeholder="FundCodeHegis" />
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>Jeopardy account?</label>
+					<label class="radio left"><input type="radio" name="JeopardyAccount" value="Yes">  Yes</label>
+					<label class="radio left"><input type="radio" name="JeopardyAccount" value="No">  No</label>
+					<br />
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>Jeopardy account comments</label>
+					<textarea placeholder="JeopardyAccountComments" />
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>Most recent order expiration date</label>
+					<input type="text" class="date" value="02-16-2012" id="MostrcntOrdexpdta" />
+				</div>
+				<div class="large-6 medium-6columns">
+					<label>Proforma account only?</label>
+					<label class="radio left"><input type="radio" name="ProformaAccountOnly" value="Yes">  Yes</label>
+					<label class="radio left"><input type="radio" name="ProformaAccountOnly" value="No">  No</label>
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>Sales Effort Key</label>
+					<input type="text" placeholder="SalesEffortKey" />
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>SAP Corporate Group ID</label>
+					<input type="text" placeholder="SapCorporateGroup" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-6 medium-6 columns">
+					<label>Slow Pay Comments</label>
+					<textarea placeholder="SlowPayComments" />
+				</div>
+				<div class="large-6 medium-6 columns">
+					<label>Slow Pay?</label>
+					<label class="radio left"><input type="radio" name="SlowPayFlag" value="Yes">  Yes</label>
+					<label class="radio left"><input type="radio" name="SlowPayFlag" value="No">  No</label>
+					<br />
+				</div>
+			</div>
+		</div> -->
+		</form>
+	</div>
+</div>
+
+
+<script src="js/libs/editable-call.js"></script>
+<script src="js/libs/addRemoveRow.js"></script>
+<script>
+
+// $("#accountDetails").hide();
+// $("#detailsTrigger").click(function() {
+// 	$("#accountDetails").show();
+// 	$('#detailsTrigger').parent().parent().addClass('active');
+// })
+
+($('#formContainer').children('div')).hide();
+$("#CCILines").show();
+$(".nav.sidebar li").siblings().removeClass('active');
+$("#CCILinesTrigger").addClass('active');
+
+$(".nav.sidebar li").click(function() {
+	$(this).siblings().removeClass('active');
+	$(this).addClass('active');
+
+	($('#formContainer').children('div')).hide();
+});
+
+
+$("#custProfileTrigger").click(function() {
+ 	$("#custProfile").show();
+ });
+$("#billingAddressTrigger").click(function() {
+ 	$("#billingAddress").show();
+ });
+$("#shippingAddressTrigger").click(function() {
+ 	$("#shippingAddress").show();
+ });
+$("#billingProfileTrigger").click(function() {
+ 	$("#billingProfile").show();
+ });
+$("#invoicingOptionsTrigger").click(function() {
+ 	$("#invoicingOptions").show();
+ });
+$("#contactsListTrigger").click(function() {
+ 	$("#contactsList").show();
+ });
+$("#csrListTrigger").click(function() {
+ 	$("#csrList").show();
+ });
+$("#CCILinesTrigger").click(function() {
+ 	$("#CCILines").show();
+ });
+
+clickableRow();
+
+initiateZURB();
+$('.date').fdatepicker({
+	format: 'mm-dd-yyyy'
+});
+
+var page = 'CA';
+
+CA_trigger();
+</script>
+
+

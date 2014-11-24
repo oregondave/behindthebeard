@@ -1,0 +1,1 @@
+proto.factory("customerDetailsData",function(t){return{getData:function(){return t("data/renewals/:id",{id:"@id"}).get({id:"customerDetails.json"})}}});

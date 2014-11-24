@@ -1,0 +1,123 @@
+{
+  "customer": [
+    {
+      "customerName": "Portland PSD",
+      "billingAddress1": "7506 SE Stark Street",
+      "billingAddress2": "Portland, OR 97215",
+      "billingAddress3": "",
+      "firm": "F",
+      "invoiceLater": "I",
+      "ISC": "",
+      "maxInvAmt": "987654",
+      "maxSC": "12",
+      "salesRep": "AN",
+      "suffixAccounts": [
+      {
+        "subscriberCode": "01",
+        "customerName": "Library of Serials",
+        "billingAddress1": "University of Central Florida",
+        "billingAddress2": "PO Box 162666",
+        "billingAddress3": "Orlando, FL 32816",
+        "lineItems": "1082",
+        "currency": "USD",
+        "subTotal": "337438.80"
+      },
+      {
+        "subscriberCode": "04",
+        "customerName": "UCF/Rosen Library",
+        "billingAddress1": "9907 Universal Boulevard",
+        "billingAddress2": "Orlando, FL 32819",
+        "billingAddress3": "",
+        "lineItems": "1",
+        "currency": "USD",
+        "subTotal": "42.00"
+      },
+      {
+        "subscriberCode": "06",
+        "customerName": "Library Acquisitions",
+        "billingAddress1": "University of Central Florida",
+        "billingAddress2": "4000 Central Florida Boulevard",
+        "billingAddress3": "Orlando, FL 32816",
+        "lineItems": "06",
+        "currency": "USD",
+        "subTotal": "2802.00"
+      }
+      ],
+
+     "fundCodes": [
+      {
+        "fundCode": "AC14P",
+        "lineItems": "2",
+        "currency": "USD",
+        "subTotal": "75.00"
+      },
+      {
+        "fundCode": "AN13",
+        "lineItems": "89",
+        "currency": "USD",
+        "subTotal": "3555.50"
+      },
+      {
+        "fundCode": "AN13P",
+        "lineItems": "52",
+        "currency": "USD",
+        "subTotal": "523.30"
+      },
+      {
+        "fundCode": "BIOSO",
+        "lineItems": "685",
+        "currency": "USD",
+        "subTotal": "212113.00"
+      },
+      {
+        "fundCode": "CMC",
+        "lineItems": "175",
+        "currency": "USD",
+        "subTotal": "85003.80"
+      },
+      {
+        "fundCode": "PY13",
+        "lineItems": "97",
+        "currency": "USD",
+        "subTotal": "39012.20"
+      }
+      ],
+      "renewalNote": [
+      {
+        "note": "Sally Jones called and requested that we move all orders from Fund Codes 12HTH and 45F to a new Fund Code, 12YP.",
+        "lastMod": "Carlos Pena",
+        "lastModDate": "20-Oct-2014"
+      }
+      ],
+      "expectedReturnDate": [
+      {
+        "date": "31-Oct-2014",
+        "lastMod": "Carlos Pena",
+        "lastModDate": "20-Oct-2014"
+      }
+      ],
+      "tender": [
+      {
+        "status": "No",
+        "note": "Expecting to receive the RFP at the end of October.",
+        "lastMod": "Carlos Pena",
+        "lastModDate": "20-Oct-2014"
+      }
+      ],
+      "deliveryNote": [
+      {
+        "note": "Sent a copy of the renewal list to the main fax line.",
+        "lastMod": "Carlos Pena",
+        "lastModDate": "20-Oct-2014"
+      }
+      ],
+      "renewalSentDate": [
+      {
+        "date": "12-Oct-2014",
+        "lastMod": "Carlos Pena",
+        "lastModDate": "20-Oct-2014"
+      }
+      ]
+    }
+  ]
+}

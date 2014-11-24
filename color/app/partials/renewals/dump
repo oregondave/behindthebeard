@@ -1,0 +1,379 @@
+    <!-- START Summary Tab Content -->
+    <div id='summaryTabContent'  class="row tabContent">
+      <div class="x-large-6 x-large-centered large-8 large-centered columns collapse labvalLeftAlign">
+        <!-- START Status History -->
+        <div class="contentBlock">
+          <div class="sectionLabel">Status History</div>
+          <div class="tableWrap">
+          <div class="scrolltable">
+          <table>
+            <tr>
+              <th class="">Status</th>
+              <th class="">Note</th>
+              <th class="">User</th>
+              <th class="last">Date</th>
+            </tr>
+            <tr>
+            <td >Status Name</td>
+            <td>
+            Status note added by user.
+            </td>
+            <td >First Last</td>
+            <td >12-Oct-2014</td>
+            </tr>
+          </table>
+          </div>
+          </div>
+        </div>
+      <!-- END Status History -->
+
+      <!-- START Notes -->
+        <div class="contentBlock">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="sectionLabel left">Notes</div>
+              <a href=""class="inlineHiddenButton right" data-reveal-id="notesModal">
+                <div class="inlineHiddenButtonText left">EDIT</div>
+                <div class="editSA right"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row labvalOverUnder lineItem" ng-repeat="note in customer.renewalNote">
+            <div class="large-12 columns">
+              <label>Renewal Note:</label>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+            <div class="large-12  columns">
+              <value>{{note.note}}</value>
+            </div>
+          </div>
+
+          <div class="row labvalOverUnder lineItem" ng-repeat="note in customer.deliveryNote">
+            <div class="large-12 columns">
+              <label>Delivery Note:</label>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+            <div class="large-12 columns">
+              <value>{{note.note}}</value>
+            </div>
+          </div>
+
+          <div class="row labvalLeftAlign lineItem" ng-repeat="note in customer.renewalSentDate">
+            <div class="large-12 columns">
+              <label>Renewal Sent:</label>
+              <value>{{note.date}}</value>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+          </div>
+
+          <div class="row labvalLeftAlign lineItem" ng-repeat="note in customer.expectedReturnDate">
+            <div class="large-12 columns">
+              <label>Expected Return Date:</label>
+              <value>{{note.date}}</value>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+          </div>
+
+          <div class="row labvalLeftAlign lineItem" ng-repeat="note in customer.tender">
+            <div class="large-12 columns">
+              <label>Tender / Bid:</label>
+              <value>{{note.status}}</value>
+              <div class="microtext blue right">{{note.lastMod}} / <span class="textNormal">{{note.lastModDate}}</span></div>
+            </div>
+            <div class="large-12 columns labvalOverUnder">
+              <value>{{note.note}}</value>
+            </div>
+          </div>
+
+        </div>
+      <!-- END Notes -->
+
+      <!-- START Representatives -->
+        <div class="contentBlock last">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="sectionLabel">Representatives</div>
+        </div>
+        <div class="large-12 columns labvalLeftAlign">
+          <label>CSR:</label>
+          <value>Name</value>
+        </div>
+        <div class="large-12 columns labvalLeftAlign">
+          <label>ASM:</label>
+          <value>Name</value>
+        </div>
+        <div class="large-12 columns labvalLeftAlign">
+          <label>Sales Representative:</label>
+          <value>Name</value>
+        </div>
+      </div>
+    </div>
+      <!-- END Representatives -->
+
+      </div>
+    </div>
+  <!-- END Sumary Tab Content -->
+
+  <!-- START Customer Tab Content -->
+    <div id='customerTabContent'  class="row tabContent">
+    <div class="large-8 large-centered collapse columns  labvalLeftAlign">
+
+      <!-- START Bill-to -->
+        <div class="contentBlock last">
+          <div class="row">
+            <div class="large-6 columns">
+              <div class="sectionLabel">Bill-to Details</div>
+              <div class="row">
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Address 1:</label>
+                <value>{{customer.billingAddress1}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Address 2:</label>
+                <value>{{customer.billingAddress2}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Address 3:</label>
+                <value>{{customer.billingAddress3}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Firm</label>
+                <value>{{customer.firm}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Invoice Later</label>
+                <value>{{customer.invoiceLater}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>ISC</label>
+                <value>{{customer.ISC}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Max Invoice Amount</label>
+                <value>{{customer.maxInvAmt | number}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Max Handling Charge</label>
+                <value>% {{customer.maxSC}}</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Sales Representative</label>
+                <value>{{customer.salesRep}}</value>
+              </div>
+              </div>
+            </div>
+
+      <!-- END Bill-to -->
+
+            <!-- START Representatives -->
+            <div class="large-6 columns respSpaceHead">
+              <div class="sectionLabel">Representatives</div>
+              <div class="row">
+              <div class="large-12 columns labvalLeftAlign">
+                <label>CSR:</label>
+                <value>Name</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>ASM:</label>
+                <value>Name</value>
+              </div>
+              <div class="large-12 columns labvalLeftAlign">
+                <label>Sales Representative:</label>
+                <value>Name</value>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- END Representatives -->
+
+  </div>
+  </div>
+  <!-- END Customer Tab Content -->
+
+
+  <!-- START Subscriber Tab Content -->
+    <div id='subscriberTabContent'  class="row tabContent">
+    <div class="x-large-6 x-large-centered large-8 large-centered columns collapse labvalLeftAlign">
+
+      <div class="contentBlock last">
+        <div class="row">
+          <div class="large-12 columns labvalLeftAlign">
+            <div class="sectionLabel">Subscriber Details</div>
+            <div class="tableWrap">
+            <div class="scrolltable">
+            <table>
+              <tr>
+                <th class="center">Code</th>
+                <th class="center">Address</th>
+                <th class="center">Line Items</th>
+                <th class="center">Currency</th>
+                <th class="center last">Subtotal</th>
+              </tr>
+              <tr ng-repeat="suffix in customer.suffixAccounts">
+                <td class="center fixedWidth-6">{{suffix.subscriberCode}}</td>
+                <td>
+                    <div>{{suffix.customerName}}</div>
+                    <div>{{suffix.billingAddress1}}</div>
+                    <div>{{suffix.billingAddress2}}</div>
+                    <div>{{suffix.billingAddress3}}</div>
+                </td>
+                <td class="num fixedWidth-6">{{suffix.lineItems | number}}</td>
+                <td class="num fixedWidth-6">{{suffix.currency}}</td>
+                <td class="num fixedWidth-6">{{suffix.subTotal | number}}</td>
+              </tr>
+            </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  <!-- END Subscriber Tab Content -->
+
+  <!-- START Fund Codes Tab Content -->
+  <div id='fundCodeTabContent' class="row tabContent" >
+  <div class="x-large-6 x-large-centered large-8 large-centered columns collapse labvalLeftAlign">
+
+    <div class="contentBlock last">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="sectionLabel">Fund Codes</div>
+          <div class="tableWrap">
+            <div class="scrolltable">
+              <table>
+                <tr>
+                <th class="center">Code</th>
+                <th class="center">Line Items</th>
+                <th class="center">Currency</th>
+                <th class="center last">Subtotal</th>
+                </tr>
+                <tr ng-repeat="fundCode in customer.fundCodes">
+                <td class="center fixedWidth-6">{{fundCode.fundCode}}</td>
+                <td class="num fixedWidth-6">{{fundCode.lineItems | number}}</td>
+                <td class="center fixedWidth-6">{{fundCode.currency}}</td>
+                <td class="monetaryTotal fixedWidth-6">{{fundCode.subTotal | number}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- END Fund Codes Tab Content -->
+
+
+  <!-- START CCI Lines Tab Content -->
+  <div id='cciLineTabContent' class="row tabContent">
+  <div class="x-large-6 x-large-centered large-8 large-centered columns collapse">
+
+    <div class="contentBlock last">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="sectionLabel">CCI Lines</div>
+          <div class="tableWrap">
+            <div class="scrolltable">
+              <table>
+                <tr>
+                    <th>CCI Number</th>
+                    <th>CCI Line Description</th>
+                </tr>
+                <tr ng-repeat="cciLine in CCILines.cciLines">
+                    <td class="align-right">{{cciLine.number}}</td>
+                    <td>{{cciLine.description}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- END CCI Lines Tab Content -->
+
+
+  <!-- START Documents Tab Content -->
+  <div id='documentsTabContent' class="row tabContent">
+  <div class="large-12 large-centered collapse columns">
+
+    <div class="contentBlock last">
+      <div class="row">
+        <div class="large-8 medium-12 large-centered columns">
+          <div class="right">
+            <a id="newDocTrigger" class="button tiny" data-reveal-id="addDocumentModal">Add Document</a>
+          </div>
+          <table id="documentsGrid">
+            <tr>
+              <th class="center">Document</th>
+              <th class="center">Description</th>
+              <th class="center">Last Modified</th>
+              <th class="center"></th>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="docTitle"><a title="Download or Access Document">untitled.txt</a></div>
+                <div class="docType">[Contract]</div>
+              </td>
+              <td>
+                <div class="doc-description left large-10 columns">Contract for UCF. Customer plans to renew biannualy. Contract will expire on 2/17/2016.</div>
+                <button class="left large-2 columns tiny">EDIT</button>
+                <!-- <a class="editLink js-doc-description" title="Edit Document Description" data-reveal-id="documentDescriptionModal" >EDIT</a> -->
+              </td>
+              <td class="fixedWidth-6">17-Oct-2014 by <strong>GAdams</strong></td>
+              <td class="center fixedWidth-6">
+                <div class="deleteBtnTiny tiny button" data-reveal-id="deleteDocumentModal">
+                  <span class="deleteIcon"></span>
+                  <span class="text">Delete</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="docTitle"><a title="Download or Access Document">UCF-Auth.docx</a></div>
+                <div class="docType">[Authorization Letter]</div>
+              </td>
+              <td>
+                <div class="doc-description">Authorization letter for UCF (1 of 2)</div>
+                <a class="editLink js-doc-description" data-reveal-id="documentDescriptionModal" title="Edit Document Description">EDIT</a>
+              </td>
+              <td>12-Aug-2014 by <strong>GAdams</strong></td>
+              <td class="center">
+                <div class="deleteBtnTiny tiny button" data-reveal-id="deleteDocumentModal">
+                  <span class="deleteIcon"></span>
+                  <span class="text">Delete</span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="deleted">
+              <td>
+                <div class="docTitle"><a title="Download or Access Document">delivery-requirements.docx</a></div>
+                <div class="docType">[Other]</div>
+              </td>
+              <td>
+                <div class="doc-description">Supplemental Document for UCF</div>
+                <a class="editLink js-doc-description" data-reveal-id="documentDescriptionModal" title="Edit Document Description">EDIT</a>
+              </td>
+              <td>12-Aug-2014 by <strong>GAdams</strong></td>
+              <td class="center">
+                  <div class="alert-text">DELETED</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!-- END Documents Tab Content -->

@@ -1,0 +1,49 @@
+    <div ng-controller="renewalsController">
+
+    <top-bar>
+        <ul class="title-area">
+
+            <li class="name">
+            <h1><a href="#/home">{{renewals.name}}</a></h1>
+            </li>
+
+            <li class="menu-icon toggle-topbar"><a href=""><span>Menu</span></a></li>
+        </ul>
+        <top-bar-section>
+            <ul class="right">
+            <li has-dropdown>
+                <a href="">Event Tracker</a>
+                <ul top-bar-dropdown>
+                  <li><a href="#/eventListing">Event Queue</a></li>
+                  <li><a href="#/eventListingAdmin">Event Queue Admin</a></li>
+                  <li><a href="#/eventDetail">Event Detail</a></li>
+                  <li><a href="#/commDetail">Communication Detail</a></li>
+                  <li><a href="#/customerAuthority">CCI Lines / Customer Authority</a></li>
+                </ul>
+            </li>
+
+
+             <li has-dropdown>
+                <a href="#/renewalSearch">Renewals</a>
+                <ul top-bar-dropdown>
+                  <li><a href="#/renewalSearch">Renewal Search</a></li>
+                  <li><a href="#/renewalDetailsNew"><span class="safetyOrange">NEW</span> Renewal Detail</a></li>
+                  <li><a href="#/renewalsManager">Renewal Manager</a></li>
+                  <li><a href="#/titleDetailEdit">Renewal Detail</a></li>
+                  <li><a href="#/renewalDocs">Renewal Documents</a></li>
+                  <li><a href="#/customerAuthority">CCI Lines / Customer Authority</a></li>
+                </ul>
+            </li>
+
+            </ul>
+        </top-bar-section>
+    </topbar>
+    </div>
+
+    <div class="half-spacer"></div>
+
+<script>
+initiateZURB();
+
+
+</script>

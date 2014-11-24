@@ -1,0 +1,318 @@
+<div class="fluid-row">
+	<div class="large-6 columns">
+		<div ng-controller="renewalsController" class="head">
+			<h4>{{renewals.customerName}}</h4>
+			Account Number: {{renewals.accountNumber}}
+		</div>
+
+		<tabset vertical="true" type="navType">
+	    <tab heading="Renewal Details">
+				<div class="horizontalForm">
+					<label>Created:</label>
+					<value>12-Dec-2013</value>
+				</div>
+				<div class="horizontalForm clear left">
+					<label>Status:</label>
+					<value>Sent</value>
+				</div>
+	    </tab>
+	    <tab heading="Account Details">
+				<div class="horizontalForm">
+					<label class="title">Billing Address:</label>
+					<value>
+					<span class="streetAddress">123 Easy Street</span> <br />
+					<span class="cityStateZip">Portland, Oregon 97215</span>
+					</value>
+				</div>
+	    </tab>
+	  </tabset>
+	</div>
+	<div class="large-6 columns collapse">
+		<div class="right toolbar">
+			<button id="addNewTitleTrigger" class="button textOnly tiny" data-reveal-id="newTitle">ADD NEW TITLE</a>
+			<button id="requestNewTitleTrigger" class="button textOnly tiny" data-reveal-id="titleRequest">NEW TITLE REQUEST</a>
+			<button id="" class="button textOnly tiny">EXPORT</a>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="fluid-row">
+	<div class="large-12 columns">
+		<!-- <table>
+			<tr>
+				<td>Account ID</td>
+				<td>
+					<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+				</td>
+			</tr>
+		</table> -->
+	</div>
+</div>
+
+<div class="fluid row">
+  <div class="large-2 medium-4 small-6 columns">
+			<div class="dashWidget origTotal">
+				<div class="title">
+					<span>Original Total</span>
+					<span class="indexLength subtext">{{renewals.renewals.length}}</span>
+				</div>
+				<div class="value">$ 1,234,567.89</div>
+			</div>
+		</div>
+		<div class="large-2 medium-4 small-6 columns end">
+			<div class="dashWidget currentTotal">
+				<div class="title">
+					<span>Current Total</span>
+					<span class="indexLength subtext">{{renewals.renewals.length}}</span>
+				</div>
+				<div class="value">$ 2,345,678.90</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<div class="fluid-row">
+	<div class="large-12 columns">
+		<div class="right">
+			<label>
+				<input id="modTitlesCheckbox" type="checkbox">
+				Show modified titles only
+			</label>
+		</div>
+	</div>
+</div>
+
+<div id="tabledata">
+<table>
+	<tr>
+		<!-- <th class="indexID"></th> -->
+		<th class="smallCol">
+			<a href="" data-dropdown="renewStatus" class="dropdown">Renew Status</a>
+			<ul id="renewStatus" data-dropdown-content class="f-dropdown">
+			  <li><a id="renewAllYES" href="">Set All 'YES'</a></li>
+			  <li><a id="renewAllNO" href="">Set ALL 'NO'</a></li>
+			  <li><a id="renewAllHOLD" href="">Set All 'HOLD'</a></li>
+			</ul>
+		</th>
+		<th>Title</th>
+		<th>Title Number</th>
+		
+		<th>Publisher</th>
+		
+		<th>Format</th>
+		<th>Subscriber ID</th>
+		<th>Fund Code</th>
+		<th>ILS Number</th>
+		<th>Total</th>
+	</tr>
+	<tr ng-repeat="renewal in renewals.renewals">
+		<td class="smallCol status">
+	    <a href="" editable-select="renewal.renewStatus" buttons="no" e-ng-options="s.value as s.text for s in renewals.statusOptions" >
+    		{{ repeatFiller(renewal.renewStatus) }}
+  		</a>
+		</td>
+		
+		<td class=""><a class="title" href="#/titleDetailEdit">{{renewal.titleName}}</a></td>
+		<td class="titleNumber text-center">{{renewal.titleNumber}}</td>
+		
+		<td class="publisher">{{renewal.publisher}}</td>
+		
+		<td>{{renewal.format}}</td>
+		<td>{{renewal.subscriberCode}}</td>
+		<td>{{renewal.fundCode}}</td>
+		<td>{{renewal.ILS_Number}}</td>
+		<td class="monetaryTotal">$ {{renewal.renewalTotal | number:2}} ({{renewal.currencyCode}})</td>
+	</tr>
+</table>
+</div>
+
+
+
+<!-- MODAL -->
+
+<!-- Title Request -->
+<div id="titleRequest" class="reveal-modal small" data-reveal>
+	<h4>New Title Request</h4>
+  <div class="row">
+	  <div class="large-12 medium-12 columns">
+	    <label>Title</label>
+	    <input type="text" placeholder="Title"/>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>Publisher</label>
+	    <input type="text" placeholder="Publisher"/>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>ISSN</label>
+	    <input type="text" placeholder="ISSN"/>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>Format</label>
+	    <select>
+				<option>Print</option>
+				<option>Print + Online</option>
+				<option>Online Only</option>
+	    </select>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>Comments</label>
+	    <textarea/>
+	  </div>
+	</div>
+	<div class="row buttonGroup">
+		<a class="primary small button right custom-close-reveal-modal">SAVE</a>
+		<a class="textOnly small button right custom-close-reveal-modal">CANCEL</a>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+
+<!-- New Title -->
+<div id="newTitle" class="reveal-modal small" data-reveal>
+	<h4>Add New Title</h4>
+	<div class="row">
+		<label>
+			<input type="checkbox">
+			Apply as Interim Order
+		</label>
+  <div class="row">
+	  <div class="large-12 medium-12 columns">
+	    <label>Title</label>
+	    <input type="text" placeholder="Title"/>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>Publisher</label>
+	    <input type="text" placeholder="Publisher"/>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>ISSN</label>
+	    <input type="text" placeholder="ISSN"/>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>Format</label>
+	    <select>
+				<option>Print</option>
+				<option>Print + Online</option>
+				<option>Online Only</option>
+	    </select>
+	  </div>
+	  <div class="large-12 medium-12 columns">
+	    <label>Comments</label>
+	    <textarea/>
+	  </div>
+	</div>
+	<div class="row buttonGroup">
+		<a class="primary small button right custom-close-reveal-modal">SAVE</a>
+		<a class="textOnly small button right custom-close-reveal-modal">CANCEL</a>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+
+
+
+
+<script>
+
+		var page = 'renewals';
+
+		CA_trigger();
+		componentInit();
+
+		$(".indexLength").prepend('(');
+		$(".indexLength").append(')');
+		
+
+		
+
+		
+
+
+// RENEW DROPDOWN OPTIONS
+
+		$('#renewOptionsYes').attr('selected', true);
+
+		$('#renewAllYES').click(function() {
+			/* Act on the event */
+			$('.renewOptionsYES').attr('selected', true);
+			$('.renewOptionsNo').attr('selected', false);
+			$('.renewOptionsHold').attr('selected', false);
+		});
+		$('#renewAllNO').click(function() {
+			/* Act on the event */
+			$('.renewOptionsNo').attr('selected', true);
+			$('.renewOptionsYES').attr('selected', false);
+			$('.renewOptionsHold').attr('selected', false);
+		});
+		$('#renewAllHOLD').click(function() {
+			/* Act on the event */
+			$('.renewOptionsHold').attr('selected', true);
+			$('.renewOptionsNo').attr('selected', false);
+			$('.renewOptionsYES').attr('selected', false);
+		});
+
+
+
+
+// AUTH CHECKBOX OPTIONS
+
+		$('.authBox').prop('checked', false);
+
+		$('#authClearAll').click(function() {
+			$('.authBox').prop('checked', false);
+		});
+		$('#authSelectAll').click(function() {
+			$('.authBox').prop('checked', true);
+		});
+
+
+
+
+// TOGGLE OFF F-DROPDOWN
+
+		$('.f-dropdown').click(function() {
+		    if ($(this).hasClass('open')) {
+		         $('a[data-dropdown="'+$(this).attr('id')+'"]').trigger('click');
+		     }
+		});
+
+
+
+// ACTIONS TAKEN AFTER GRID IS RENDERED
+
+setTimeout(
+  function() 
+  	{
+  		initGridJS()
+ 		}, 500);
+
+	function initGridJS() {
+		// SEARCH FOR TEXT CONTAINING ...
+			
+			$('td:contains("AAMC")').filter(function() {
+				return $(this).text() == "AAMC";}).addClass('flagged has-tip').attr('data-tooltip', '').attr('title', 'Previous value = AMCA');
+			$('td:contains("001-523-059")').filter(function() {
+				return $(this).text() == "001-523-059";}).addClass('flagged has-tip').attr('data-tooltip', '').attr('title', 'Previous value = 0015230599');		
+			$('td:contains("Adoptive Families")').filter(function() {
+				return $(this).text() == "Adoptive Families";}).siblings('.monetaryTotal').addClass('flagged has-tip').attr('data-tooltip', '').attr('title', 'Adoptive Families: Full Story');
+
+			$('td.flagged').parent('tr').addClass('flaggedRow')
+	}
+
+	$("#modTitlesCheckbox").click(function() {
+			/* Act on the event */
+			stateCheck();
+		});
+
+		function stateCheck() {
+			if ($('#modTitlesCheckbox').prop('checked')) {
+				$('tr:not(.flaggedRow)').hide();
+			} else {
+				$('tr:not(.flaggedRow)').show();
+			}
+		}
+
+
+</script>

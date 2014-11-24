@@ -1,0 +1,1 @@
+proto.factory("commsData",function(t){return{getData:function(){return t("data/eventTracker/:id",{id:"@id"}).get({id:"comm.json"})}}});

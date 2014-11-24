@@ -1,0 +1,142 @@
+<div ng-controller="eventTrackerController">
+
+
+	<!-- FILTER & SEARCH -->
+
+	<div class="row fluid">
+		<div class="large-3 columns">
+			<div class="row collapse">
+			<label>Search</label>
+				<div class="small-9 columns">
+					
+					<input type="search" ng-model="search.$" />
+				</div>
+				<div class="small-3 columns">
+          <a id="filterPanelToggle" href="" class="button postfix filterPanelToggle">FILTERS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div id="filterPanel" class="row fluid filterPanel">
+		<div class="large-3 columns">
+			<label>Event Status</label>
+			<input type="search" ng-model="search.eventStatus" />
+		</div>
+		<div class="large-3 columns">
+			<label>Event Number</label>
+			<input type="search" ng-model="search.eventID" />
+		</div>
+		<div class="large-3 columns">
+			<label>Customer Name</label>
+			<input type="search" ng-model="search.custName" />
+		</div>
+		<div class="large-3 columns">
+			<label>Customer Number</label>
+			<input type="search" ng-model="search.custNumber" />
+		</div>
+	</div>
+
+	<!-- EVENT LISTING -->
+
+	<div ng-repeat="event in eventListings.eventListings | filter:search:strict">
+		<div class="row fluid eventUnit">
+			<div class="large-1 medium-2 columns">
+				<div ng-class="{neutral: (event.eventStatus == 'pending'), affirmative: (event.eventStatus == 'open'), negative: (event.eventStatus == 'closed')}" class="eventStatus">{{event.eventStatus}}</div>
+			</div>
+			<div class="large-1 medium-2 columns">
+				<div class="eventID">{{event.eventID}}</div>
+			</div>
+			<div class="large-9 medium-6 columns">
+				<div class="eventTitle">
+					<a href="#/eventDetail">
+						{{event.eventTitle}} {{event.eventTarget}}
+					</a>
+				</div>
+				<div class="custName">{{event.custName}} <span class="subscript"> [ {{event.custNumber}} ] </span></div>
+				 <div>
+				 	{{event.eventDescription}}
+				 </div>
+			</div>
+			<div class="large-1 medium-2 columns">
+				{{event.eventDue}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- TAB DEMO  -->
+
+<!--   <p>Select a tab by setting active binding to true:</p>
+  <p>
+    <button class="button small" ng-click="tabs[0].active = true">Select second tab</button>
+    <button class="button small" ng-click="tabs[1].active = true">Select third tab</button>
+  </p>
+  <hr />
+
+  <tabset>
+    <tab heading="Static title">Static content</tab>
+    <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active">
+      {{tab.content}}
+    </tab>
+    <tab select="alertMe()">
+      <tab-heading>
+        <i class="fa fa-bell"></i> Alert!
+      </tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </tab>
+  </tabset>
+
+  <hr />
+
+  <tabset vertical="true" type="navType">
+    <tab heading="Vertical 1">Vertical content 1</tab>
+    <tab heading="Vertical 2">Vertical content 2</tab>
+  </tabset>
+
+  <hr /> -->
+
+
+
+
+
+
+
+
+<script>
+
+$(".eventUnit").click(function() {
+	/* Act on the event */
+
+});
+
+$("#filterPanel").hide();
+
+$("#filterPanelToggle").click(function() {
+	/* Act on the event */
+	$("#filterPanel").toggle(400);
+});
+
+// if ( $(".eventStatus").hasClass('neutral') ) {
+// 	$(this).text('PENDING')
+// }
+
+
+
+
+// if ($(".eventStatus val:neutral")) {
+// 	$(".eventStatus").addClass('neutral');
+// 	// $(".eventStatus").text('PENDING');
+//  };
+//  if ($(".eventStatus val:affirmative")) {
+// 	$(".eventStatus").addClass('affirmative');
+// 	// $(".eventStatus").text('PENDING');
+//  };
+
+
+</script>
+
+
+
+
+

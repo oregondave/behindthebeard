@@ -1,0 +1,337 @@
+{
+  "CCILines":
+  [
+    {
+      "CCI-Num": 1,
+      "Description": "Coding Instructions"
+    },
+    {
+      "CCI-Num": 00002-00009,
+      "Description": "Coding Comment"
+    },
+    {
+      "CCI-Num": 10,
+      "Description": "Current Issue Orders Only"
+    },
+    {
+      "CCI-Num": 11,
+      "Description": "Carnegie Class #"
+    },
+    {
+      "CCI-Num": 20,
+      "Description": "Bill Later / Standing Orders Only"
+    },
+    {
+      "CCI-Num": 22,
+      "Description": "Jeopardy Account"
+    },
+    {
+      "CCI-Num": 25,
+      "Description": "Cross Referenced to Account XX XXXXX-XX"
+    },
+    {
+      "CCI-Num": 26,
+      "Description": "Cross Referenced from Account XX XXXXX-XX"
+    },
+    {
+      "CCI-Num": 30,
+      "Description": "Back Issue Orders Only"
+    },
+    {
+      "CCI-Num": 90,
+      "Description": "Payment Required Before Processing"
+    },
+    {
+      "CCI-Num": 95,
+      "Description": "Edit Required Before Processing"
+    },
+    {
+      "CCI-Num": 100,
+      "Description": "Do Not Process - Refer to Supervisor"
+    },
+    {
+      "CCI-Num": 102,
+      "Description": "(Explanation) Lines 1-9"
+    },
+    {
+      "CCI-Num": 210,
+      "Description": "Proforma Account Only"
+    },
+    {
+      "CCI-Num": 220,
+      "Description": "XXX Common Expire"
+    },
+    {
+      "CCI-Num": 230,
+      "Description": "No Common Expiration"
+    },
+    {
+      "CCI-Num": 250,
+      "Description":"Do Not Place 2nd Entry to Keep Sub Current"
+    },
+    {
+      "CCI-Num": 300,
+      "Description": "Do Not Prorate Over 1 Year"
+    },
+    {
+      "CCI-Num": 350,
+      "Description": "Prorate at Short Terms if Possible - Will Accept Over 1 Year"
+    },
+    {
+      "CCI-Num": 360,
+      "Description": "Prorate for 1 Year Plus"
+    },
+    {
+      "CCI-Num": 370,
+      "Description": "Prorate to Common Expire if One Year Only Enter 2nd Year"
+    },
+    {
+      "CCI-Num": 380,
+      "Description": "Do Not Prorate for Common Expiration"
+    },
+    {
+      "CCI-Num": 400,
+      "Description": "Enter Only for Term and Start Date Specified on Customer Order"
+    },
+    {
+      "CCI-Num": 520,
+      "Description": "Split Invoice by ISC/HEGIS"
+    },
+    {
+      "CCI-Num": 521,
+      "Description": "Split Invoice by Subscriber"
+    },
+    {
+      "CCI-Num": 600,
+      "Description": "Do Not Process Without Formal PO"
+    },
+    {
+      "CCI-Num": 601,
+      "Description": "PO Number Satisfies Formal PO Requirement"
+    },
+    {
+      "CCI-Num": 650,
+      "Description": "Do Not Combine Ship-Tos"
+    },
+    {
+      "CCI-Num": 700,
+      "Description": "Do Not Combine PO s"
+    },
+    {
+      "CCI-Num": 850,
+      "Description": "Use PO # XXXXXXXXXXXXXX Until XX/XX/XX"
+    },
+    {
+      "CCI-Num": 900,
+      "Description": "Order Cannot Exceed Amt Stated on PO - Notify Customer if Order Exceeds Amt on PO by ..%"
+    },
+    {
+      "CCI-Num": 950,
+      "Description": "XXXXXXX FTE (# of Full Time Students Enrolled / Employees"
+    },
+    {
+      "CCI-Num": 1200,
+      "Description": "Use C3* Comment"
+    },
+    {
+      "CCI-Num": 1210,
+      "Description": "Use C1* Comment"
+    },
+    {
+      "CCI-Num": 1300,
+      "Description": "HEGIS Numbers Required ="
+    },
+    {
+      "CCI-Num": 1350,
+      "Description": "HEGIS Numbers Reqd in Address on Order to Publ"
+    },
+    {
+      "CCI-Num": 1410,
+      "Description": "ISC Required"
+    },
+    {
+      "CCI-Num": 1450,
+      "Description": "ILS Required"
+    },
+    {
+      "CCI-Num": 1460,
+      "Description": "Delivery Method XXX"
+    },
+    {
+      "CCI-Num": 1600,
+      "Description": "Comment Line X Reqd"
+    },
+    {
+      "CCI-Num": 1981,
+      "Description": "Exclude Proformas from Net Title Markup"
+    },
+    {
+      "CCI-Num": 1982,
+      "Description": "Exclude Account from Net Title Markup"
+    },
+    {
+      "CCI-Num": 1985,
+      "Description": "Add Net Title Markup to Renewal List"
+    },
+    {
+      "CCI-Num": 1987,
+      "Description": "Net Title Markup Fee Override Amount 0000000.00 in Customer Currency"
+    },
+    {
+      "CCI-Num": 1988,
+      "Description": "Low Margin Title Feed Override Amount 0000000.00 in Customer Currency"
+    },
+    {
+      "CCI-Num": 2000,
+      "Description": "Code for Long Terms - See Below"
+    },
+    {
+      "CCI-Num": 2100,
+      "Description": "Where Available - Entire List"
+    },
+    {
+      "CCI-Num": 2200,
+      "Description": "Where Available - 1/3 List"
+    },
+    {
+      "CCI-Num": 2300,
+      "Description": "Only Where Savings - Entire List"
+    },
+    {
+      "CCI-Num": 2400,
+      "Description": "Only Where Savings - 1/3 of List"
+    },
+    {
+      "CCI-Num": 3000,
+      "Description": "Do Not Allow BL/SO Orders"
+    },
+    {
+      "CCI-Num": 3010,
+      "Description": "Do Not Allow Bill Later Orders"
+    },
+    {
+      "CCI-Num": 3020,
+      "Description": "Do Not Allow Standing Orders"
+    },
+    {
+      "CCI-Num": 4300,
+      "Description": "Maximum Inv Amount $XXXXXXX Input at $XXXXXXX"
+    },
+    {
+      "CCI-Num": 4400,
+      "Description": "Special Inv Date XX/XX/XX Use Until XX/XX/XX"
+    },
+    {
+      "CCI-Num": 25050-25099,
+      "Description": "Birmingham JETS XX"
+    },
+    {
+      "CCI-Num": 25100-25150,
+      "Description": "Amsterdam JETS XX"
+    },
+    {
+      "CCI-Num": 25200-25250,
+      "Description": "Tenafly JETS XX"
+    },
+    {
+      "CCI-Num": 25350-25450,
+      "Description": "DC JETS XX"
+    },
+    {
+      "CCI-Num": 25500-27500,
+      "Description": "Birmingham JETS XX"
+    },
+    {
+      "CCI-Num": 38000,
+      "Description": "Customer Requests Access to All Offers of Free Online Jrnl"
+    },
+    {
+      "CCI-Num": 38001,
+      "Description": "Customer Does Not Request Access to Any Offers of Free Online Journals"
+    },
+    {
+      "CCI-Num": 38002,
+      "Description": "Contact Customer on All Offers of Free Online Journal Access"
+    },
+    {
+      "CCI-Num": 38009,
+      "Description": "Customer Subscribes to e-Packages"
+    },
+    {
+      "CCI-Num": 38020,
+      "Description": "Contact:"
+    },
+    {
+      "CCI-Num": 38021,
+      "Description": "Telephone:"
+    },
+    {
+      "CCI-Num": 38023,
+      "Description": "Email:"
+    },
+    {
+      "CCI-Num": 38024,
+      "Description": "Number of Users"
+    },
+    {
+      "CCI-Num": 38099,
+      "Description": "Metapress ID#"
+    },
+    {
+      "CCI-Num": 40000,
+      "Description": "Contact / Correspondence Information"
+    },
+    {
+      "CCI-Num": 40050,
+      "Description": "Customer Internet Address"
+    },
+    {
+      "CCI-Num": 40100,
+      "Description": "ACK All Correspondence"
+    },
+    {
+      "CCI-Num": 40200,
+      "Description": "Telephone /XXX/XXX-XXXX Contact XXXXXXXXXXXXXXX"
+    },
+    {
+      "CCI-Num": 40201,
+      "Description": "Email Address"
+    },
+    {
+      "CCI-Num": 40202,
+      "Description": "FAX Number"
+    },
+    {
+      "CCI-Num": 40300,
+      "Description": "Email Addr"
+    },
+    {
+      "CCI-Num": 40301,
+      "Description": "A/R Contact E-mail Address:"
+    },
+    {
+      "CCI-Num": 40310,
+      "Description": "AR Clerk: XX"
+    },
+    {
+      "CCI-Num": 40350,
+      "Description": "FAX # /XXX/XXX-XXXX"
+    },
+    {
+      "CCI-Num": 40400,
+      "Description": "No Phone Calls - Prefer Mail"
+    },
+    {
+      "CCI-Num": 81300,
+      "Description": "Do Not Mail Renewal List (Explanation) - L1 and L2"
+    },
+    {
+      "CCI-Num": 89000-89999,
+      "Description": "Miscellaneous Comments - 89000"
+    },
+    {
+      "CCI-Num": 99902,
+      "Description": "Renewals On The Web"
+    }
+  ]
+}

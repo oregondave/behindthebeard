@@ -1,0 +1,180 @@
+<!-- 	<input type="search" name="" value="" ng-model="searchText">
+	<table id="searchTextResults">
+  <tr><th>Name</th><th>Phone</th></tr>
+  <tr ng-repeat="renewal in renewals.renewals | filter:searchText" >
+    <td>{{renewal.titleName}}</td>
+    <td>{{renewal.titleNumber}}</td>
+  </tr>
+</table> -->
+
+<!--
+Any: <input ng-model="search.$"> <br>
+Name only <input ng-model="search.titleName"><br>
+Phone only <input ng-model="search.titleNumber"><br>
+Equality <input type="checkbox" ng-model="strict"><br>
+<table id="searchObjResults">
+  <tr><th>Name</th><th>Phone</th></tr>
+  <tr ng-repeat="renewal in renewals.renewals | filter:searchText" >
+    <td>{{renewal.titleName}}</td>
+    <td>{{renewal.titleNumber}}</td>
+  </tr>
+</table> -->
+
+
+
+
+	 <div id="" class="fluid row">
+		<div class="large-12 columns">
+				<label id="simpleSearchTrigger" class="textToggle">SEARCH</label>
+				<label id="advSearchTrigger" class="textToggle">ADVANCED SEARCH</label>
+		</div>
+	 </div>
+
+	<div id="simpleSearch" class="fluid row">
+		<div class="x-large-3 large-5 medium-6 columns">
+			<div class="small-11 columns collapse">
+				<input class="has-subtext" type="search" ng-model="search.$" placeholder="Search by Office Code or Account Number"/>
+				<!-- <div class="inputValidationIcon"></div> -->
+				<!-- <div class="inputValidationText">Search by Customer name, Account number or CSR name</div> -->
+			</div>
+			<div class="small-1 columns collapse">
+	    			<a href="" id="" class="button postfix">
+	    				<span class="filterPanelToggle"></span>
+	    			</a>
+	    		</div>
+	    </div>
+	 </div>
+
+	<div class="fluid row" id="advSearch">
+		<div class="x-large-2 large-2 medium-6 columns">
+			<label>
+				Customer Name
+				<input type="search" ng-model="search.custName">
+			</label>
+		</div>
+		<div class="x-large-2 large-2 medium-6 columns">
+			<label>
+				Account Number
+				<input type="search" ng-model="search.custID">
+			</label>
+		</div>
+		<div class="x-large-2 large-2 medium-12 columns">
+			<div class="row">
+			<div class="x-large-6 large-12 medium-6  columns paired first">
+				<label>
+					Pull Date From:
+					<input type="text" class="datepicker" />
+				</label>
+			</div>
+			<div class="x-large-6 large-12 medium-6 columns paired second">
+				<label>
+					Pull Date To:
+					<input type="text" class="datepicker" />
+				</label>
+			</div>
+			</div>
+		</div>
+
+<!-- Responsive row split -->
+
+		<div class="x-large-2 large-2 medium-4 columns">
+			<label>
+				Status
+				<select ng-model="search.renewalStatus">
+				<!-- <select> -->
+					<option value="1">Sent</option>
+					<option value="4">Cancelled</option>
+				</select>
+			</label>
+		</div>
+
+		<div class="x-large-2 large-2 medium-4 columns">
+			<label>
+				CSR
+				<select>
+				<!-- <select> -->
+					<option selected="true"></option>
+					<option>csrFirst csrLast</option>
+				</select>
+			</label>
+		</div>
+
+		<div class="x-large-2 large-2 medium-4 end columns">
+
+				<label class="invisible">SEARCH</label>
+				<button class="left icon">
+					<span class="filterPanelToggle"></span>
+				</button>
+				<button class="left">
+					Clear Search
+				</button>
+
+		</div>
+	</div>
+
+	<div class="fluid row">
+		<div class="large-12 columns">
+			<div class="right download">
+				<div class="icon right"></div>
+				<div class="prepend-label right">EXPORT</div>
+			</div>
+		</div>
+	</div>
+
+<div class="fluid row">
+	<div id="searchResults">
+		<table id="searchObjResults">
+		  <tr>
+		  	<th class="ascend" ng-click="changeSorting('custName')">Customer Name</th>
+		  	<th class="descend" ng-click="changeSorting('custID')">Account Number</th>
+		  	<th class="sort" ng-click="changeSorting('renewalCreated')">Pull Date</th>
+		  	<th class="ascend">Status</th>
+		  	<th class="ascend fixedWidth-6">Currency</th>
+		  	<th class="ascend fixedWidth-6" ng-click="changeSorting('renewalVal')">Grand Total</th>
+		  	<th>CSR</th>
+		  </tr>
+
+		  <tr class="custItem" ng-repeat="customer in customers.customers | orderBy:sort.column:sort.descending | filter:search:strict ">
+
+			    <td> <a href="#/renewalDetailsNew">{{customer.custName}}</td>
+			    <td> <a href="#/renewalDetailsNew">{{customer.custID}}</td>
+			    <td> <a href="#/renewalDetailsNew">{{customer.renewalCreated}}</td>
+			    <td> <a href="#/renewalDetailsNew">{{ repeatFillerCustomer(customer.renewalStatus) }}</td>
+			    <td> <a href="#/renewalDetailsNew">USD</td>
+			    <td class="monetaryTotal"> <a href="#/renewalDetailsNew">{{customer.renewalVal | number: 2}}</td>
+			    <td> <a href="#/renewalDetailsNew">{{customer.csrFirst}} {{customer.csrLast}}</td>
+
+		  </tr>
+		</table>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script>
+$("#advSearch").hide();
+$("#advSearchTrigger").addClass('toggleOff');
+
+$("#simpleSearchTrigger").click(function() {
+	/* Act on the event */
+	$("#simpleSearch").show(400);
+	$("#advSearch").hide(400);
+	$("#simpleSearchTrigger").removeClass('toggleOff');
+	$("#advSearchTrigger").addClass('toggleOff');
+});
+$("#advSearchTrigger").click(function() {
+	/* Act on the event */
+	$("#advSearch").show(400);
+	$("#simpleSearch").hide(400);
+	$("#advSearchTrigger").removeClass('toggleOff');
+	$("#simpleSearchTrigger").addClass('toggleOff');
+});
+
+initDatePicker();
+
+
+</script>

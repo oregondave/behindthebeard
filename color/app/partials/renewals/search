@@ -1,0 +1,65 @@
+<!-- STANDALONE SEARCH -->
+          <form>
+            <div id="" class="row">
+              <div class="large-12 columns">
+                <label id="simpleSearchTrigger" class="textToggle">SEARCH</label>
+                <label id="advSearchTrigger" class="textToggle">ADVANCED SEARCH</label>
+              </div>
+            </div>
+
+            <div id="simpleSearch" class="row collapse">
+              <div class="x-large-3 large-5 medium-6 columns">
+                <div class="small-11 columns collapse">
+                  <input class="has-subtext" type="search" placeholder="Search by Format, Subscriber Code or Fund Code"/>
+                </div>
+                <div class="small-1 columns collapse">
+                  <a href="" id="" class="button postfix">
+                    <span class="filterPanelToggle"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- INPUT VALIDATION EXAMPLE -->
+            <!--
+            <div class="fluid row collapse">
+              <div class="large-3 columns padded-left">
+                <div class="small-9 columns error">
+                  <input type="text" placeholder="small-9.columns">
+                  <small>Invalid entry</small>
+                </div>
+                <div class="small-3 columns">
+                  <a class="postfix button">Search</a>
+                </div>
+              </div>
+            </div>
+            -->
+
+            <div class="row" id="advSearch">
+              <div class="x-large-2 large-2 medium-4 columns">
+                <label>
+                  Format
+                  <input type="search">
+                </label>
+              </div>
+              <div class="x-large-2 large-2 medium-4 columns">
+                <label>
+                  Subscriber Code
+                  <input type="search">
+                </label>
+              </div>
+              <div class="x-large-2 large-2 medium-4 columns">
+                <label>
+                  Fund Code
+                  <input type="search">
+                </label>
+              </div>
+              <div class="x-large-2 large-2 medium-4 end columns">
+                <label class="invisible">SEARCH</label>
+                <button class="left icon">
+                  <span class="filterPanelToggle"></span>
+                </button>
+                <button id="clearSearchBtn" class="left">Clear Search</button>
+              </div>
+            </div>
+          </form>

@@ -1,0 +1,21 @@
+$blue: #3498DB;
+$lightblue: lighten( $blue, 20%);
+$softblue: darken( $blue, 10%);
+$darkblue: darken( $blue, 18%);
+
+.bossHeader{
+  position: relative;
+  transition: margin 1s ease;
+}
+.bossHeaderMenu{
+  background-color: $softblue;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+}
+.bossHeader.pushed{
+   margin-top: 60px; 
+}
