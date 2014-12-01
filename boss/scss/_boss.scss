@@ -1,0 +1,86 @@
+.boss {
+  background-color: $softblue !important;
+  padding-top: 8px !important;
+  width: 60px !important;
+  height: 45px;
+}
+.bossHeaderContainer{
+  position: relative;
+  transition: margin 1s ease;
+
+}
+.bossHeader{
+  background-color: $softblue;
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  z-index: 1;
+
+  .button {
+    font-size: .8rem;
+    height: 45px;
+    margin: 0;
+  }
+  .button-group {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
+  .button-group > li .button {
+    border-left: none;
+    border-right: 1px solid $paperwhite;
+  }
+  .button-group > li:first-child .button {
+    border-left: 1px solid $paperwhite;
+  }
+  .bossLogo {
+    background-image: url(../img/boss.svg);
+    background-repeat: no-repeat;
+    padding: .5rem;
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+}
+.bossHeaderContainer.pushed{
+   margin-top: 45px; 
+}
+
+.bossIcon {
+  height: 28px;
+  width: 28px;
+  background-image: url(../img/globe.svg) !important;
+  background-repeat: no-repeat !important;
+}
+
+.f-dropdown {
+  &.form {
+    max-width: 300px;
+
+    li {
+      cursor: default;
+      &:hover {
+        background-color: transparent;
+      }
+      &.labelInputPair {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        input {
+          margin-bottom: 0;
+        }
+      }
+      &.formActions {
+        @extend .labelInputPair;
+
+        .button {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  } 
+}
+
+
+
+

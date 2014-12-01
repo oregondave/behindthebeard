@@ -5,19 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/boss.css" />
+    <!-- <link rel="stylesheet" href="css/boss.css" /> -->
+    <link rel="stylesheet" href="css/ui.app.css" />
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+
+
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
 
+<!-- BOSS HEADER INCLUDE -->
 	<div class="bossHeaderContainer">
-	  <div class="bossHeader">
-		<div class="large-1 columns">
+	  <div class="fluid row bossHeader collapse">
+		<div class="large-1 small-2 columns">
 	    	<div class="bossLogo"></div>
 	    </div>
-
+	    <div class="large-8 small-6 columns">
+			<ul class="button-group">
+  				<li><a href="#" class="button" data-dropdown="dd1">Event Tracker</a></li>
+  				<ul id="dd1" class="f-dropdown">
+					<li><a href="#">Event Queue</a></li>
+			  		<li><a href="#">Event List</a></li>
+				</ul>
+  				<li><a href="#" class="button" data-dropdown="dd2">Renewals</a></li>
+  				<ul id="dd2" class="f-dropdown">
+					<li><a href="#">Renewals Search</a></li>
+				</ul>
+			</ul>
+	    </div>
+	    <div class="large-3 small-4 columns collapse">
+			<a href="#" class="button right" data-dropdown="dd3">Logged in as: Sam Peterbergen Jinglemheiomer Schmidt</a>
+			<ul id="dd3" class="f-dropdown form">
+				<li class="labelInputPair">
+					<label>Username<input type="text" name="" value=""></label>
+				</li>
+				<li class="labelInputPair">
+					<label>Password<input type="text" name="" value=""></label>
+				</li>
+				<li class="formActions">
+					<div class="button right">login</div>
+				</li>
+			</ul>
+	    </div>
 	  </div>
 	</div>
+<!-- end BOSS header include -->
 
   	<nav class="top-bar" data-topbar role="navigation">
 	  <ul class="title-area">
@@ -29,7 +65,8 @@
 	  </ul>
 
 	  <section class="top-bar-section">
-	    <!-- Right Nav Section -->
+	    <!-- BOSS BUTTON -->
+	    <!-- copy + paste this block in top-bar to add BOSS Header func to app -->
 	    <ul class="right">
 	      <li>
 	      		<a href="#" class="boss">
@@ -37,6 +74,7 @@
 	      		</a>
 	      	</li>
 	    </ul>
+	    <!-- end BOSS button block -->
 
 	    <!-- Left Nav Section -->
 			<!-- 

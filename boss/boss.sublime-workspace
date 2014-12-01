@@ -1,0 +1,929 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"boss",
+				"bossHeader"
+			],
+			[
+				"light",
+				"lightgray"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ligh",
+				"lightgray"
+			],
+			[
+				"found",
+				"foundation-link-hover"
+			],
+			[
+				"cit",
+				"cityStateZip"
+			],
+			[
+				"flaG",
+				"flaggedRow"
+			],
+			[
+				"flagge",
+				"flaggedRow"
+			],
+			[
+				"flagg",
+				"flaggedRow"
+			],
+			[
+				"show",
+				"showDelta"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"mod",
+				"modTitlesCheckbox"
+			],
+			[
+				"stat",
+				"statusOptions"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"reveal",
+				"reveal-modal"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"sele",
+				"selected	Attr"
+			],
+			[
+				"New",
+				"Newspaper"
+			],
+			[
+				"sel",
+				"selected	Attr"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"lig",
+				"light-pom"
+			],
+			[
+				"det",
+				"detailsTrigger"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"ul",
+				"ultralightgreen"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"USe",
+				"Use"
+			],
+			[
+				"Ee",
+				"EEU"
+			],
+			[
+				"FOr",
+				"For"
+			],
+			[
+				"ALP",
+				"ALPSP"
+			],
+			[
+				"Se",
+				"Service"
+			],
+			[
+				"ONl",
+				"Online"
+			],
+			[
+				"backl",
+				"background-color"
+			],
+			[
+				"pr",
+				"progress"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"med",
+				"mediumgray"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"medium",
+				"mediumblue"
+			],
+			[
+				"nav",
+				"nav-element"
+			],
+			[
+				"as",
+				"asbestos"
+			],
+			[
+				"sou",
+				"source-panel"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"exis",
+				"existingNameInput"
+			],
+			[
+				"ex",
+				"existingNameInput"
+			],
+			[
+				"lightgr",
+				"lightgreen"
+			],
+			[
+				"mediu",
+				"mediumgreen"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"al",
+				"almost-invisible-gray"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"backgro",
+				"background-image"
+			],
+			[
+				"business",
+				"businessName"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"businessNam",
+				"businessNameInput"
+			],
+			[
+				"textarea",
+				"textarea	Tag"
+			],
+			[
+				"label",
+				"label	Tag"
+			],
+			[
+				"Tex",
+				"textarea"
+			],
+			[
+				"labe",
+				"label	Tag"
+			],
+			[
+				"filter",
+				"filterinput"
+			],
+			[
+				"ng-r",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"bore",
+				"border-radius"
+			],
+			[
+				"tab",
+				"table	<table>"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"bav",
+				"apple-backface-visibility"
+			],
+			[
+				"$locat",
+				"$locationProvider	AngularJS"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"searc",
+				"search-bar"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"even",
+				"eventData"
+			],
+			[
+				"event",
+				"event"
+			],
+			[
+				"defer",
+				"deferred"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"succes",
+				"successcb"
+			],
+			[
+				"succe",
+				"successcb"
+			],
+			[
+				"in",
+				"ins	Tag"
+			],
+			[
+				"lab",
+				"label	<label>"
+			],
+			[
+				"cla",
+				"class	Attr"
+			],
+			[
+				"script",
+				"script	Tag"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 8103,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"oack",
+				"Package Control: Install Package"
+			],
+			[
+				"plug",
+				"Preferences: Package Control Settings – User"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/davecaskey/Documents/EBSCO/behindthebeard/boss"
+	],
+	"file_history":
+	[
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/davecaskey/Documents/EBSCO/behindthebeard/color/color.sublime-project",
+		"/Users/davecaskey/Documents/EBSCO/behindthebeard/color/app/scss/ui.proto.scss",
+		"/Users/davecaskey/Documents/EBSCO/behindthebeard/boss/scss/app.scss",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/davecaskey/Documents/EBSCO/renewalsWorkflow/4.0/renewals_proto/renewalDetails.html",
+		"/Users/davecaskey/Sites/davidashby/resources/svg/x-white.svg",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/angular_app.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/customerListing.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/controllers/renewalsController.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/controllers/eventTrackerController.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/titleData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/renewals/renewalsManager.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/customerauthority/customerauthority.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/renewals/renewalSearch.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/renewals/titleDetailEdit.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/renewals/renewalDocs.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/renewalDocs.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/src/data/customerListing.csv",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/eventTracker/eventDetail.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/renewals.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/csrList.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/csrData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/css/foundation-datepicker.css",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/partials/shared/topbar.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/CCIData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/renewalDocs.js",
+		"/Users/davecaskey/Downloads/predawn-master/README.md",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/index.html",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/customerData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/countries.json",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/davecaskey/Documents/EBSCO/renewals/renewals.sublime-project",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/package.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/cci.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/countriesData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/statesData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/states.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/services/renewalsData.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/directives.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/fullDataDump.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/Gruntfile.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/img/svg/download.svg",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/renewals/home.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/data/home/home2.json",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/js/controllers/renewals.js",
+		"/Users/davecaskey/Documents/EBSCO/renewals/app/bower.json",
+		"/Users/davecaskey/Documents/EBSCO/customerAuthority/app/js/app.js",
+		"/Users/davecaskey/Documents/EBSCO/customerAuthority/app/partials/fte/fte.html",
+		"/Users/davecaskey/Documents/EBSCO/customerAuthority/app/partials/fte/customerPricingForm.html",
+		"/Users/davecaskey/Documents/EBSCO/customerAuthority/app/partials/fte/userAccount.html",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/ui-index.html",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/node_modules/karma/node_modules/http-proxy/test/fixtures/agent2-key.pem",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/app-index.html",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/scss/marketplace.ui.scss",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/js/controllers/paramsController.js",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/js/services/geoData.js",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/js/controllers/geoController.js",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/data/params/params.json",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/partials/editParams",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/partials/editParams.html",
+		"/Users/davecaskey/Sites/AIF/app/scss/ui.aif.scss",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/Users/davecaskey/Documents/EBSCO/marketplace/app/partials/partial2.html",
+		"/Users/davecaskey/Sites/AIF/app/partials/shared/topbar.html",
+		"/Users/davecaskey/Sites/AIF/app/index.html",
+		"/Users/davecaskey/Sites/AIF/app/fabricator/gulpfile.js",
+		"/Users/davecaskey/Sites/AIF/app/toolkit/bower.json",
+		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/app/js/controllers.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/app/partials/menu.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/app/js/app.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/app/js/ui.app.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/bower.json",
+		"/Users/davecaskey/Documents/EBSCO/proto/app/partials/fte/fte.html",
+		"/Users/davecaskey/Documents/EBSCO/proto/app/js/libs/contactSearch.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/package.json",
+		"/Users/davecaskey/Documents/EBSCO/toolkitSRC/package.json",
+		"/Users/davecaskey/Documents/EBSCO/toolkitSRC/index.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkitSRC/bower.json",
+		"/Users/davecaskey/Sites/test/partials/foot.html",
+		"/Users/davecaskey/Sites/test/index.html",
+		"/Users/davecaskey/Sites/test/partials/head.html",
+		"/Applications/MAMP/conf/apache/magic",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/js/prism.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/css/prism.css",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/js/X-rayHTML.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit_FAB/src/toolkit/assets/scss/ui.toolkit.scss",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/css/X-rayHTML.css",
+		"/Users/davecaskey/Downloads/prism (1).css",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/assets/code.svg",
+		"/Users/davecaskey/Documents/EBSCO/toolkit_FAB/dist/index.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit_FAB/dist/assets/js/f.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/js/xraySpecs.js",
+		"/Users/davecaskey/Documents/EBSCO/proto/app/scss/ui.proto.scss",
+		"/Users/davecaskey/Documents/EBSCO/proto/app/scss/app.scss",
+		"/Users/davecaskey/Documents/EBSCO/ECM/app/scss/ui.ecm.scss",
+		"/Users/davecaskey/Documents/EBSCO/toolkit_FAB/src/fabricator/scss/partials/_icons.scss",
+		"/Users/davecaskey/Documents/EBSCO/proto_F4/app/partials/fte/fte.html",
+		"/Users/davecaskey/Sites/AIF/app/js/services/appraisalsData.js",
+		"/Users/davecaskey/Sites/AIF/app/js/controllers/dashboardController.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/partials/menu.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit_FAB/src/fabricator/js/prism.js",
+		"/Users/davecaskey/Downloads/prism (1).js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/css/xlarge-grid.css",
+		"/Users/davecaskey/Downloads/foundation-5.2.2.custom/css/foundation.css",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/index_default.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/Gruntfile.js",
+		"/Users/davecaskey/Downloads/grunt-includes-example-master/Gruntfile.js",
+		"/Users/davecaskey/Downloads/grunt-includes-example-master/site/index.html",
+		"/Users/davecaskey/Downloads/grunt-includes-example-master/build/pages/about.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/partials/test.html",
+		"/Users/davecaskey/Downloads/grunt-includes-example-master/package.json",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/bower_components/foundation/js/foundation.js",
+		"/Users/davecaskey/Downloads/commondream-handlebars-helpers-examples-7b44841/partials.html",
+		"/Users/davecaskey/Downloads/commondream-handlebars-helpers-examples-7b44841/index.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/dist/buttons.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/partials/menu.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/gulpfile.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/button.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/assets/js/toolkit.js",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/buttons.html",
+		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/index.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/davecaskey/Documents/EBSCO/renewalsWorkflow/4.1/renewals_POC/app/partials",
+			"/Users/davecaskey/Documents/EBSCO/renewalsWorkflow/4.1/renewals_POC/app/partials/renewals",
+			"<project>",
+			"/Users/davecaskey/Documents/EBSCO/renewals",
+			"/Users/davecaskey/Documents/EBSCO/renewals/app/js",
+			"/Users/davecaskey/Documents/EBSCO/renewals",
+			"<project>",
+			"/Users/davecaskey/Documents/EBSCO/proto/app",
+			"<project>",
+			"field--wrapper"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url",
+			"value",
+			"block",
+			"table",
+			"content",
+			"table",
+			"red",
+			"table",
+			"displayBlock",
+			"display",
+			"invoice",
+			"subscriberID",
+			"select",
+			"$",
+			"crsLast",
+			"datepicker",
+			"-->\n",
+			"DatePicker",
+			"datepicker",
+			"docu",
+			"dash",
+			"editable",
+			"small",
+			"button",
+			"small",
+			"shoert",
+			"select",
+			"btn",
+			"sub-panel",
+			"typo",
+			"sub",
+			"micro",
+			"typo",
+			"tool",
+			"357ebd",
+			"tool",
+			"btn",
+			"hover",
+			"tool",
+			"button",
+			"crsLast",
+			"Sent",
+			"All",
+			"collapse",
+			"lame",
+			"fluid",
+			"});\n",
+			"overflow",
+			"event",
+			"lame",
+			"Renewal Total",
+			"form",
+			"over",
+			"large-6 medium-6",
+			"lame",
+			"form",
+			"Fund Code",
+			"Order Number",
+			"Account Number",
+			"Publisher",
+			"Title Number",
+			"Order Number",
+			"ILS Number",
+			"Quantity",
+			"Start Date",
+			"Subscriber Name",
+			"alternativeFormax",
+			"Format",
+			"Alternative Formats",
+			"Format",
+			"Subscriber Code",
+			"Title Name",
+			"customerAuthority",
+			"proto",
+			"active",
+			"activeac active",
+			"active",
+			"Summary of Account Information",
+			"block",
+			"labval",
+			"clear",
+			"download",
+			"pdf",
+			"vir",
+			"pri",
+			"vir",
+			"cou",
+			"ge",
+			"und",
+			"pol",
+			"nor",
+			"isl",
+			"spa",
+			"nam",
+			"ind",
+			"sha",
+			"sea",
+			"nor",
+			"sca",
+			"per",
+			"sam",
+			"chn",
+			"nam",
+			"ind",
+			"dom",
+			"ant",
+			"pua",
+			"cen",
+			"aus",
+			"pai",
+			"vic",
+			"aus",
+			"aus\\",
+			"pac",
+			"cod",
+			"eri",
+			"tur",
+			"nam",
+			"afg",
+			"ovi",
+			"pol",
+			"nor",
+			"isl",
+			"est",
+			"glp",
+			"tur",
+			"pol",
+			"nor"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"subscriber_ID",
+			"",
+			"csrLast",
+			"Sent",
+			"renewalTotal",
+			"large-12 medium-12",
+			"fundCode",
+			"orderNumber",
+			"accountNumber",
+			"publisher",
+			"titleNumber",
+			"accountNumber",
+			"ILS_Number",
+			"quantity",
+			"startDate",
+			"subscriberName",
+			"alternativeFormats",
+			"format",
+			"alternativeFormax",
+			"format",
+			"subscriberCode",
+			"titleName",
+			"current",
+			"xlarge"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								582,
+								582
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/PreDawn_MOD.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 98.0
+	},
+	"project": "boss.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/davidashby/davidashby.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
