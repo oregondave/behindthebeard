@@ -15,7 +15,11 @@
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(-100%); }
+  transform: translateY(-100%);
+  z-index: 1; }
+  .bossHeader .button {
+    font-size: .8rem;
+    height: 45px; }
   .bossHeader .bossLogo {
     background-image: url(../img/boss.svg);
     background-repeat: no-repeat;
