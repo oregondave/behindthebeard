@@ -59,6 +59,9 @@
     .f-dropdown.form li.formActions .button {
       margin-bottom: 15px; }
 
+.loggedIn {
+  min-width: 300px; }
+
 html {
   font-size: 16px;
   font-weight: normal;
@@ -75,5 +78,5 @@ body {
 
 .button, button {
   background-color: #217dbb; }
-  .button:hover, button:hover {
+  .button:hover, .button:focus, button:hover, button:focus {
     background-color: #3498DB; }
