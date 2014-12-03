@@ -4,158 +4,34 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
-				"magin",
-				"margin-bottom"
-			],
-			[
-				"Margin",
-				"margin-bottom"
-			],
-			[
-				"medium",
-				"medium-gray"
-			],
-			[
-				"text-",
-				"text-transform"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"lightg",
-				"lightgray"
-			],
-			[
-				"border",
-				"border-bottom"
-			],
-			[
-				"peter",
-				"peter-river-bright"
-			],
-			[
-				"light",
-				"light-emerald"
-			],
-			[
-				"peteer",
-				"peter-river-dark"
-			],
-			[
-				"peter-river",
-				"peter-river-light"
-			],
-			[
-				"be",
-				"belize-hole"
-			],
-			[
-				"agent",
-				"agentOptions"
-			],
-			[
-				"sect",
-				"sectionLabel"
-			],
-			[
-				"inline",
-				"inlineEdit"
-			],
-			[
-				"edit",
-				"editLink"
-			],
-			[
-				"pete",
-				"peter-river"
-			],
-			[
-				"backgr",
-				"background-color"
-			],
-			[
-				"bor",
-				"border-bottom"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"mediu",
-				"medium-gray"
-			],
-			[
-				"i",
-				"important"
-			],
-			[
-				"med",
-				"medium-gray"
+				"padding",
+				"padding-bottom"
 			],
 			[
 				"margin",
 				"margin-bottom"
 			],
 			[
-				"line",
-				"line-height"
-			],
-			[
-				"paddin",
+				"padd",
 				"padding-right"
 			],
 			[
-				"cu",
-				"customerDetailsData"
+				"bacl",
+				"background-color"
 			],
 			[
-				"rem",
-				"removeClass	.removeClass()"
+				"back",
+				"background-color"
 			],
 			[
-				"cust",
-				"customerDetails"
+				"font-",
+				"font-size"
 			],
 			[
-				"add",
-				"addClass	.addClass()"
+				"z-",
+				"z-index"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
-				"ALl",
-				"Allow"
-			],
-			[
-				"O",
-				"Only"
-			],
-			[
-				"no-",
-				"no-repeat"
-			],
-			[
-				"no",
-				"nowrap"
-			],
-			[
-				"white",
-				"white-space"
-			],
-			[
-				"padding-",
-				"padding-bottom"
-			],
-			[
-				"background",
-				"background-repeat"
-=======
 				"bac",
 				"background-image"
 			],
@@ -220,10 +96,6 @@
 				"no-repeat"
 			],
 			[
-				"back",
-				"background-image"
-			],
-			[
 				"reveal",
 				"reveal-modal"
 			],
@@ -252,14 +124,6 @@
 				"selected	Attr"
 			],
 			[
-				"padd",
-				"padding-left"
-			],
-			[
-				"padding",
-				"padding-left"
-			],
-			[
 				"line",
 				"line-height"
 			],
@@ -278,10 +142,6 @@
 			[
 				"ul",
 				"ultralightgreen"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"max",
@@ -526,7 +386,6 @@
 			[
 				"fu",
 				"function"
->>>>>>> FETCH_HEAD
 			]
 		]
 	},
@@ -536,11 +395,7 @@
 			"file": "index.html",
 			"settings":
 			{
-<<<<<<< HEAD
-				"buffer_size": 7496,
-=======
-				"buffer_size": 8103,
->>>>>>> FETCH_HEAD
+				"buffer_size": 9142,
 				"line_ending": "Unix"
 			}
 		}
@@ -548,35 +403,22 @@
 	"build_system": "",
 	"command_palette":
 	{
-<<<<<<< HEAD
-		"height": 163.0,
-		"selected_items":
-		[
-			[
-=======
 		"height": 368.0,
 		"selected_items":
 		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
 			[
 				"pa",
 				"Package Control: List Packages"
 			],
 			[
->>>>>>> FETCH_HEAD
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
-<<<<<<< HEAD
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-=======
 				"Insta",
 				"Package Control: Install Package"
 			],
@@ -601,19 +443,7 @@
 				"Package Control: Remove Package"
 			],
 			[
->>>>>>> FETCH_HEAD
 				"rem",
-				"Package Control: Remove Package"
-			],
-			[
-<<<<<<< HEAD
-				"pack",
-				"Package Control: List Packages"
-			]
-		],
-		"width": 417.0
-=======
-				"remo",
 				"Package Control: Remove Package"
 			],
 			[
@@ -642,19 +472,14 @@
 			]
 		],
 		"width": 561.0
->>>>>>> FETCH_HEAD
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
-<<<<<<< HEAD
-			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
-=======
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
->>>>>>> FETCH_HEAD
 		]
 	},
 	"distraction_free":
@@ -668,101 +493,11 @@
 	},
 	"expanded_folders":
 	[
-<<<<<<< HEAD
-		"/Users/dcaskey/Documents/projects/behindthebeard/boss"
-	],
-	"file_history":
-	[
-		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
-		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_proto/renewals-phaseOne.sublime-project",
-		"/Users/dcaskey/Documents/projects/behindthebeard/boss/app/partials/shared/topbar.html",
-		"/Users/dcaskey/Documents/projects/behindthebeard/boss/app/js/angular_app.js",
-		"/Users/dcaskey/Documents/projects/behindthebeard/boss/app/index.html",
-		"/Users/dcaskey/Documents/projects/behindthebeard/boss/app/package.json",
-		"/Users/dcaskey/Documents/projects/behindthebeard/color/renewals_POC/app/scss/ui.proto.scss",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/index.html",
-		"/Volumes/interface/prototype/renewalsWorkflow/renewals_POC/4.1/app/index.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/img/svg/edit3.svg",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/img/svg/edit2.svg",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/img/svg/edit.svg",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/img/svg/pencilSA.svg",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/img/svg/pencil.svg",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_proto/orederDetails.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/partials/renewals/renewalDetailsNew.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/scss/.sass-cache/18e8da3d6c7a113dcc23926709646a7d3afd21d1/ui.proto.scssc",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/scss/.sass-cache/6d483f4430d8d5f8413db4eb996e769624b9bcbc/ui.proto.scssc",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/scss/.sass-cache/7950409a36e1698b78657a8ff42509913bb94826/ui.proto.scssc",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/partials/renewals/dump",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/css/ui.proto.css",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/scss/.sass-cache/87d9ccfdd8f6e6ee7f5fe67386987c7c634b35a0/ui.proto.scssc",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/scss/.sass-cache/fd2d13fdcf3e2626f3a281d72f4634b21efe2676/ui.proto.scssc",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/js/controllers/renewalsController.js",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/partials/renewals/hz.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/data/renewals/orderDetails.json",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_proto/renewalDetails.html",
-		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/partials/shared/topbar.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/js/services/orderDetailsData.js",
-		"/Users/dcaskey/Downloads/convertcsv (2).json",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.1/renewals_POC/app/js/angular_app.js",
-		"/Users/dcaskey/Documents/projects/color/renewals_POC/app/scss/ui.proto.scss",
-		"/Users/dcaskey/Documents/projects/color/renewals_POC/app/css/ui.proto.css",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/color/renewals_POC/app/css/ui.proto.css",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/partials/renewals/dump",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/partials/renewals/search",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/partials/renewals/renewalDetailsNew.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_proto/renewalDetails.html",
-		"/Volumes/interface/prototype/renewalsWorkflow/renewals_POC/4.0/app/partials/renewals/renewalDetailsNew.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_proto/css/ui.renewals.css",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/js/libs/responsive-tables.js",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/css/responsive-tables.css",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/3.0/renewals_proto/renewalDetails.html",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/js/controllers/renewalsController.js",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/js/services/orderData.js",
-		"/Users/dcaskey/Documents/projects/renewalsWorkflow/4.0/renewals_POC/app/index.html",
-		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/Users/dcaskey/Documents/projects/renewals_POC/3.0/app/scss/ui.proto.scss",
-		"/Users/dcaskey/Documents/projects/renewals_POC/3.0/app/partials/renewals/renewalDetailsNew.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/2.2.1/app/data/renewals/customerDetails.json",
-		"/Users/dcaskey/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-		"/Users/dcaskey/Documents/projects/renewals_POC/2.2.1/app/scss/ui.proto.scss",
-		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.2.1/renewalDetails.html",
-		"/Volumes/interface/prototype/renewalsWorkflow/renewals-phaseOne/2.2.1/renewalDetails.html",
-		"/Volumes/interface/prototype/renewalsWorkflow/renewals-phaseOne/3.0/renewalDetails.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/2.2/app/partials/renewals/renewalDetailsNew.html",
-		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.2/renewalDetails.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/2.2/app/partials/renewals/renewalSearch.html",
-		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.0/renewals.html",
-		"/Volumes/interface/prototype/renewalsWorkflow/renewals-phaseOne/2.2/renewalDetails.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/js/controllers/renewalsController.js",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/js/services/customerDetailsData.js",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/index.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/js/angular_app.js",
-		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.0/imgebscodp.css",
-		"/Users/dcaskey/Documents/projects/renewals-phaseOne/2.0/foundation-4.3.2/index.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/css/foundation-datepicker.css",
-		"/Volumes/interface/prototype/dcaskey/renewalsPOC/app/css/ui.proto.css",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/data/renewals/renewals.json",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/partials/renewals/renewalSearch.html",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/download.svg",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/downloadCloud.svg",
-		"/Users/dcaskey/Downloads/foundation-essentials-5.4.5/css/foundation.css",
-		"/Users/dcaskey/Downloads/foundation-5.4.5/css/foundation.css",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/data/renewals/customerListing.json",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/info.svg",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/tip.svg",
-		"/Users/dcaskey/Documents/projects/renewals_POC/app/img/svg/infoBluex.svg",
-		"/Users/dcaskey/Documents/projects/behindthebeard/security.html",
-		"/Users/dcaskey/Documents/projects/foundation-apps-master/package.json",
-		"/Volumes/interface/prototype/dcaskey/renewals-phaseOne/renewals.html",
-		"/Users/dcaskey/Documents/projects/renewals-phaseOne/scss/ui.proto.scss"
-=======
 		"/Users/davecaskey/Documents/EBSCO/behindthebeard/boss"
 	],
 	"file_history":
 	[
+		"/Users/davecaskey/Documents/EBSCO/renewalsWorkflow/4.1/renewals_POC/app/scss/ui.proto.scss",
 		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
 		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
 		"/Users/davecaskey/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
@@ -889,9 +624,7 @@
 		"/Users/davecaskey/Documents/EBSCO/toolkit/gulpfile.js",
 		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/button.html",
 		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/assets/js/toolkit.js",
-		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/buttons.html",
-		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/index.html"
->>>>>>> FETCH_HEAD
+		"/Users/davecaskey/Documents/EBSCO/toolkit/src/toolkit/views/buttons.html"
 	],
 	"find":
 	{
@@ -899,13 +632,6 @@
 	},
 	"find_in_files":
 	{
-<<<<<<< HEAD
-		"height": 154.0,
-		"where_history":
-		[
-			"<project>",
-			""
-=======
 		"height": 93.0,
 		"where_history":
 		[
@@ -919,7 +645,6 @@
 			"/Users/davecaskey/Documents/EBSCO/proto/app",
 			"<project>",
 			"field--wrapper"
->>>>>>> FETCH_HEAD
 		]
 	},
 	"find_state":
@@ -927,138 +652,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
-			"proto",
-			"paper",
-			"hover",
-			"label",
-			"mediumgreen",
-			"emerald",
-			"sunflower",
-			"pom",
-			"light-pom",
-			"pom",
-			"light-red",
-			"soft-red",
-			"peter-river-deep",
-			"peter-river-dark",
-			"peter-river-light",
-			"peter-river",
-			"belize-hole",
-			"lightblue",
-			"medium-gray",
-			"mid-gray",
-			"extralightgray",
-			"almost-invisible-gray",
-			"large-offset-2",
-			"icon",
-			"prepend",
-			"down",
-			"labva",
-			"section",
-			"address",
-			"content",
-			"labval",
-			"labvalOverUnder",
-			"labvalLeftAlign",
-			"labvalRightAlign",
-			"(:</",
-			"labvalOverUnder",
-			"large-8",
-			"large-4",
-			"labvalOverUnder",
-			"labvalLeftAlign",
-			"labva",
-			"$almost-invisible-gray",
-			"extralightgray",
-			"$mid-gra",
-			"$mid-gray",
-			"$medium-gray",
-			"wet",
-			"yellow",
-			"green",
-			"contentHea",
-			"green",
-			"$light-pom",
-			"$pom",
-			"$light-red",
-			"$soft-red",
-			"$peter-river-deep",
-			"$peter-river-dark",
-			"$peter-river-light",
-			"lightlightblue",
-			"lightblue",
-			"$peter-river-light",
-			"$peter-river",
-			"$belize-hole",
-			"lightblue",
-			"$blue",
-			"blue",
-			"$peter-river-light",
-			"peter-river",
-			"blue",
-			"belize-hole",
-			"medium-gray",
-			"mid-gray",
-			"lightlightblue",
-			"lightblue",
-			"asphalt",
-			"charcoal",
-			"h4",
-			"labval",
-			"respSpa",
-			"sectionL",
-			"sectionLabel",
-			"media",
-			"medi",
-			"formSect",
-			"formSec",
-			"media",
-			"scroll",
-			"contentBlock",
-			"last",
-			"media",
-			"updateTables",
-			"original",
-			"td {\n			padding: 0 .5rem;\n\n			&.align-right {\n				text-align: right;\n				padding-right: 1rem;\n				}\n			.eventStatus {\n				padding-left: 1.8rem;\n				}\n		}",
-			"td",
-			"tr",
-			"th",
-			"table",
-			"medi",
-			"tab",
-			"tabContent",
-			"content",
-			"media",
-			"th",
-			"font",
-			"tinder",
-			"subtext",
-			"border-right",
-			"document",
-			"bill",
-			"collapse",
-			"notes",
-			"status",
-			"table",
-			"th",
-			"form",
-			"Section",
-			"section",
-			"END",
-			"section",
-			"collapsed",
-			"table",
-			"button",
-			"textOnly",
-			"micro",
-			"labval",
-			"button",
-			"first",
-			"input"
-		],
-		"highlight": true,
-=======
 			"url",
 			"value",
 			"block",
@@ -1189,54 +782,11 @@
 			"nor"
 		],
 		"highlight": false,
->>>>>>> FETCH_HEAD
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
-<<<<<<< HEAD
-			"softgreen",
-			"darkred",
-			"red",
-			"darkred",
-			"lightred",
-			"softred",
-			"darkblue",
-			"softblue",
-			"lightblue",
-			"blue",
-			"paleblue",
-			"labvalStacked",
-			"labvalHorizontal",
-			"labvalLeftAlign",
-			"large-9",
-			"large-3",
-			"labvalLeftAlign",
-			"labvalOverUnder",
-			"$paperwhite",
-			"xtralightgray",
-			"$lightash",
-			"$softred",
-			"$red",
-			"$softred",
-			"$darkblue",
-			"$softblue",
-			"$lightblue",
-			"lightblue",
-			"paleblue",
-			"$lightblue",
-			"$blue",
-			"$softblue",
-			"$darkblue",
-			"description",
-			"number",
-			"description",
-			"number",
-			"\"renewalStatus\":\"1\",",
-			"\"renewalStatus\":\"4\",",
-			"\"renewalStatus\":\"1\","
-=======
 			"subscriber_ID",
 			"",
 			"csrLast",
@@ -1261,7 +811,6 @@
 			"titleName",
 			"current",
 			"xlarge"
->>>>>>> FETCH_HEAD
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1281,24 +830,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-<<<<<<< HEAD
-						"buffer_size": 7496,
-=======
-						"buffer_size": 8103,
->>>>>>> FETCH_HEAD
+						"buffer_size": 9142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
 								0,
 								0
-=======
-								582,
-								582
->>>>>>> FETCH_HEAD
 							]
 						],
 						"settings":
@@ -1322,11 +862,7 @@
 	},
 	"input":
 	{
-<<<<<<< HEAD
-		"height": 0.0
-=======
 		"height": 31.0
->>>>>>> FETCH_HEAD
 	},
 	"layout":
 	{
@@ -1353,11 +889,7 @@
 	"menu_visible": true,
 	"output.find_results":
 	{
-<<<<<<< HEAD
-		"height": 0.0
-=======
 		"height": 98.0
->>>>>>> FETCH_HEAD
 	},
 	"project": "boss.sublime-project",
 	"replace":
@@ -1375,13 +907,6 @@
 	},
 	"select_project":
 	{
-<<<<<<< HEAD
-		"height": 0.0,
-		"selected_items":
-		[
-		],
-		"width": 0.0
-=======
 		"height": 500.0,
 		"selected_items":
 		[
@@ -1391,7 +916,6 @@
 			]
 		],
 		"width": 380.0
->>>>>>> FETCH_HEAD
 	},
 	"select_symbol":
 	{
@@ -1409,11 +933,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-<<<<<<< HEAD
-	"side_bar_width": 403.0,
-=======
 	"side_bar_width": 316.0,
->>>>>>> FETCH_HEAD
 	"status_bar_visible": true,
 	"template_settings":
 	{
