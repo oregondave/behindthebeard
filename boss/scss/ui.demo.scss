@@ -40,27 +40,27 @@ $softorange: desaturate( $orange, 30% );
 $main-font-size: 16px;
 
 
-// @import 'boss';
+@import 'header';
 
 html {
-	font-size: $main-font-size;
-	font-weight: normal;
-	font-style: normal;
-	-webkit-font-smoothing: antialiased;
-	height: 100%;
+  font-size: $main-font-size;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100%;
 }
 
 .fluid.row { max-width: 100% }
 .button, button {
-	background-color: $softblue;
+  background-color: $softblue;
 
-	&:hover, &:focus {
-		background-color: $blue;
-	}
+  &:hover, &:focus {
+    background-color: $blue;
+  }
 }
 

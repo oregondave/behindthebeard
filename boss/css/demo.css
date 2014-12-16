@@ -1,0 +1,123 @@
+.bossHeader {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%; }
+  .bossHeader a {
+    display: block;
+    line-height: 1em;
+    text-decoration: none;
+    padding: 0 20px; }
+  .bossHeader ul, .bossHeader li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .bossHeader ul {
+    position: relative;
+    z-index: 597; }
+    .bossHeader ul li {
+      float: left;
+      min-height: 1px;
+      vertical-align: middle; }
+      .bossHeader ul li.hover, .bossHeader ul li:hover {
+        position: relative;
+        z-index: 599;
+        cursor: default; }
+      .bossHeader ul li:hover > ul {
+        visibility: visible; }
+      .bossHeader ul li:hover > a, .bossHeader ul li.active > a {
+        background: #1b9bff;
+        color: #FFF; }
+    .bossHeader ul ul {
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 598;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      margin-top: 0;
+      text-transform: none;
+      min-width: 190px; }
+      .bossHeader ul ul a {
+        background: #1b9bff;
+        color: #FFF;
+        border: 1px solid #0082e7;
+        border-top: 0 none;
+        line-height: 150%;
+        padding: 16px 20px; }
+      .bossHeader ul ul li {
+        float: none;
+        font-weight: normal;
+        position: relative; }
+        .bossHeader ul ul li:first-child > a {
+          border-top: 1px solid #0082e7; }
+        .bossHeader ul ul li:hover > a {
+          background: #35a6ff; }
+        .bossHeader ul ul li:last-child > a {
+          border-radius: 0 0 3px 3px;
+          box-shadow: 0 1px 0 #1b9bff; }
+        .bossHeader ul ul li:last-child:hover > a {
+          border-radius: 0 0 0 3px; }
+  .bossHeader > ul {
+    *display: inline-block; }
+  .bossHeader:after, .bossHeader ul:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .bossHeader > ul > li > a {
+    line-height: 45px; }
+
+.bossHeaderContainer {
+  position: relative;
+  transition: margin 1s ease; }
+
+.bossHeader {
+  background-color: #217dbb;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  z-index: 1; }
+  .bossHeader .button {
+    font-size: .8rem;
+    height: 45px;
+    margin: 0; }
+  .bossHeader .button-group {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  .bossHeader .button-group > li .button {
+    border-left: none;
+    border-right: 1px solid #fefefe; }
+  .bossHeader .button-group > li:first-child .button {
+    border-left: 1px solid #fefefe; }
+  .bossHeader .bossLogo {
+    background-image: url(../img/boss.svg);
+    background-repeat: no-repeat;
+    width: 110px;
+    margin-top: 12px;
+    margin-left: 35px;
+    height: 20px; }
+
+.bossHeaderContainer.pushed {
+  margin-top: 45px; }
+
+html {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  height: 100%; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100%; }
+
+.fluid.row {
+  max-width: 100%; }
+
+.button, button {
+  background-color: #217dbb; }
+  .button:hover, .button:focus, button:hover, button:focus {
+    background-color: #3498DB; }
