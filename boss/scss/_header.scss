@@ -24,13 +24,13 @@
 
     li {
       float: left;
-      min-height: 1px;
-      vertical-align: middle;
+      // min-height: 1px;
+      // vertical-align: middle;
 
       &.hover,
       &:hover {
         position: relative;
-        z-index: 599;
+        z-index: 1;
         cursor: default;
       }
       &:hover > ul {
@@ -38,7 +38,7 @@
       }
       &:hover > a,
       &.active > a {
-        background: #1b9bff;
+        background: $paperwhite;
         color: #FFF;
       }
     }
@@ -48,21 +48,20 @@
       position: absolute;
       top: 100%;
       left: 0;
-      z-index: 598;
+      z-index: 1;
       width: 100%;
       bottom: 0;
       left: 0;
       margin-top: 0;
-      text-transform: none;
       min-width: 190px;
 
       a {
-        background: #1b9bff;
-        color: #FFF;
-        border: 1px solid #0082e7;
-        border-top: 0 none;
-        line-height: 150%;
-        padding: 16px 20px;
+        background: $paperwhite;
+        color: $charcoal;
+        border: 1px solid $blue;
+        border-top: 0;
+        // line-height: 150%;
+        padding: .75rem 1rem;
       }
       li {
         float: none;
@@ -70,10 +69,10 @@
         position: relative;
 
         &:first-child > a {
-          border-top: 1px solid #0082e7;
+          border-top: 1px solid $green;
         }
         &:hover > a {
-          background: #35a6ff;
+          background: $green;
         }
         &:last-child > a {
           border-radius: 0 0 3px 3px;
@@ -101,7 +100,7 @@
   transition: margin 1s ease;
 }
 
-.bossHeader{
+.bossHeader {
   background-color: $softblue;
   // height: 45px;
   width: 100%;
@@ -111,21 +110,11 @@
   transform: translateY(-100%);
   z-index: 1;
 
-  .button {
-    font-size: .8rem;
-    height: 45px;
-    margin: 0;
-  }
   .button-group {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    float: left;
   }
-  .button-group > li .button {
-    border-left: none;
-    border-right: 1px solid $paperwhite;
-  }
-  .button-group > li:first-child .button {
-    border-left: 1px solid $paperwhite;
-  }
+
   .bossLogo {
     background-image: url(../img/boss.svg);
     background-repeat: no-repeat;
@@ -133,6 +122,7 @@
     margin-top: 12px;
     margin-left: 35px;
     height: 20px;
+    float: left;
   }
 }
 

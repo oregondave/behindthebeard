@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/ui.demo.css" />
+    <link rel="stylesheet" href="css/ui.boss.css" />
     <link rel="stylesheet" href="css/ui.app.css" />
 
     <!-- Fonts -->

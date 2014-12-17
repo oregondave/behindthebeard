@@ -58,9 +58,20 @@ body {
 .fluid.row { max-width: 100% }
 .button, button {
   background-color: $softblue;
+  font-size: .8rem;
+  height: 45px;
+  margin: 0;
 
   &:hover, &:focus {
-    background-color: $blue;
+    background-color: $red;
   }
 }
+li .button {
+    border-left: none;
+    border-right: 1px solid $paperwhite;
+  }
+  li:first-child .button {
+    border-left: 1px solid $paperwhite;
+  }
+
 

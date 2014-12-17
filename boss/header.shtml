@@ -1,15 +1,16 @@
 <div class="bossHeaderContainer">
-  <div class="bossHeader" id='cssmenu'>
-
+  <div class="bossHeader">
+  <div class="bossLogo"> </div>
+  <div class="button-group">
     <ul>
-      <li><div class="bossLogo"></div></li>
-      <li class='has-sub'><a href='#'>Event Tracker</a>
+      <li class='has-sub'><div class="button small" >Event Tracker</div>
         <ul>
          <li><a href='#'>Work Items</a></li>
          <li><a href='#'>Alerts</a> </li>
        </ul>
      </li>
-     <li><a href='#'>Renewals</a></li>
+     <li><div class="button small" >Renewals</div></li>
    </ul>
+   </div>
  </div>
 </div>
